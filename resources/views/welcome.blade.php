@@ -22,7 +22,7 @@
 
 
 
-
+<!-- 
     <div class="header-top">
       <div class="container">
           <div class="row">
@@ -44,18 +44,148 @@
           </div>
 
       </div>
-  </div>
+  </div> -->
 
+
+<!-- 
+  <nav
+      class=" navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-1"
+     >
+      <div class="container-fluid" style="background:#1f60dd;padding:9px; marign-bottom:50px">
+        <a class="navbar-brand ms-4" href="#"
+          ><img
+            src="{{URL::asset('assets/images/logo.png') }}"
+            alt="Smart Academy logo"
+            class="w-75 h-75"
+        /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="{{url('/')}}"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="{{url('about')}}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="{{url('coursehome')}}">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">College</a>
+              </li>
+       
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Contact us</a>
+          
+
+            </li>
+  
+    
+          </ul>
+
+          <a href="{{url('login')}}" class="btn btn-outline-primary mx-5 px-5" type="submit">
+            Sign in
+</a>
+        </div>
+      </div>
+    </nav> -->
+  
+
+
+
+
+
+
+
+
+
+     <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Course</a></li>
+          <li><a class="nav-link   scrollto" href="#portfolio">College</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+   
+          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+          <li><a class="getstarted scrollto" href="#about">Sing Up</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" >
+
+  
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Better Solutions For Your Business</h1>
+          <h2>We are team of talented designers making websites with Bootstrap</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/images/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+
+
+   
 
  
 
+  <!-- <div class="row">
+  
+   
+
+   <div class="col">
+     sacasckasnlvnkla
+   </div> 
 
 
+   <div class="col">
+
+   <img src="assets/images/undraw_certification_re_ifll.svg" alt="">
+
+   </div>
+ 
+
+  </div>
+ -->
 
 
 
     <!-- navbar -->
-    <nav
+    <!-- <nav
       class=" navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-1"
      >
       <div class="container-fluid" style="background-color:#002db3; padding: 9px;">
@@ -104,10 +234,10 @@
 </a>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <!-- carousel -->
-    <div
+   <!-- <div
       id="carouselExampleAutoPlaying"
       class="carousel slide"
       data-bs-ride="carousel"
@@ -170,7 +300,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
 
 
@@ -241,7 +371,146 @@
 
 
 
+    <!-- our fields -->
+    <div class="container mb-5">
+      <div class="row">
+        <span class="fs-1 fw-semibold txt-darkblue text-center py-5"
+          >Our Fields</span
+        >
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 p-0">
+          <div
+            class="hover1 card rounded-0"
+            style="
+              background-image: url(./Assets/images/12.png);
+              background-size: cover;
+              height: 500px;
+            "
+          >
+            <div class="card2 card-body my-3 mx-3 p-2" style="display: none">
+              <span class="span1 fs-1 txt-darkblue fw-semibold">
+                Electric Engineering
+              </span>
+              <p class="mt-5 fs-4 w-75 fw-semibold text-white">
+                Electrical engineers are responsible for creating innovative
+                solutions in areas such as power generation, distribution,
+                communication, control systems, and electronic circuits.
+              </p>
+              <button
+                class="button1 mb-3 bg-white txt-green fw-semibold position-absolute bottom-0"
+              >
+                Read More
+              </button>
+            </div>
 
+            <div class="card1 card-body position-absolute bottom-0">
+              <span class="px-2 my-3 fs-1 text-white fw-semibold"
+                >Electric Engineering</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 p-0">
+          <div
+            class="hover1 card rounded-0"
+            style="
+              background-image: url(./Assets/images/13.png);
+              background-size: cover;
+              height: 500px;
+            "
+          >
+            <div class="card2 card-body my-3 mx-3 p-2" style="display: none">
+              <span class="span1 fs-1 txt-darkblue fw-semibold">
+                Electric Engineering
+              </span>
+              <p class="mt-5 fs-4 w-75 fw-semibold text-white">
+                Electrical engineers are responsible for creating innovative
+                solutions in areas such as power generation, distribution,
+                communication, control systems, and electronic circuits.
+              </p>
+              <button
+                class="button1 mb-3 bg-white txt-green fw-semibold position-absolute bottom-0"
+              >
+                Read More
+              </button>
+            </div>
+
+            <div class="card1 card-body position-absolute bottom-0">
+              <span class="px-2 my-3 fs-1 text-white fw-semibold"
+                >Electric Engineering</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 p-0">
+          <div
+            class="hover1 card rounded-0"
+            style="
+              background-image: url(./Assets/images/14.png);
+              background-size: cover;
+              height: 500px;
+            "
+          >
+            <div class="card2 card-body my-3 mx-3 p-2" style="display: none">
+              <span class="span1 fs-1 txt-darkblue fw-semibold">
+                Electric Engineering
+              </span>
+              <p class="mt-5 fs-4 w-75 fw-semibold text-white">
+                Electrical engineers are responsible for creating innovative
+                solutions in areas such as power generation, distribution,
+                communication, control systems, and electronic circuits.
+              </p>
+              <button
+                class="button1 mb-3 bg-white txt-green fw-semibold position-absolute bottom-0"
+              >
+                Read More
+              </button>
+            </div>
+
+            <div class="card1 card-body position-absolute bottom-0">
+              <span class="px-2 my-3 fs-1 text-white fw-semibold"
+                >Electric Engineering</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 p-0">
+          <div
+            class="hover1 card rounded-0"
+            style="
+              background-image: url(./Assets/images/15.png);
+              background-size: cover;
+              height: 500px;
+            "
+          >
+            <div class="card2 card-body my-3 mx-3 p-2" style="display: none">
+              <span class="span1 fs-1 txt-darkblue fw-semibold">
+                Electric Engineering
+              </span>
+              <p class="mt-5 fs-4 w-75 fw-semibold text-white">
+                Electrical engineers are responsible for creating innovative
+                solutions in areas such as power generation, distribution,
+                communication, control systems, and electronic circuits.
+              </p>
+              <button
+                class="button1 mb-3 bg-white txt-green fw-semibold position-absolute bottom-0"
+              >
+                Read More
+              </button>
+            </div>
+
+            <div class="card1 card-body position-absolute bottom-0">
+              <span class="px-2 my-3 fs-1 text-white fw-semibold"
+                >Electric Engineering</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -272,11 +541,11 @@
         <section>
           <div class="heading text-white">
             <p class="fs-1 fw-semibold my-2">
-              Smart Academy: Empowering Minds, Shaping Futures
+              Smart Education: Empowering Minds, Shaping Futures
             </p>
 
             <p class="fs-4 my-5 txt-gray">
-              At Smart Academy, we believe in the transformative power of
+              At  Smart Education, we believe in the transformative power of
               education to unlock the full potential of individuals and
               drive positive change in the world. Our university is
               dedicated to fostering a dynamic learning environment that
@@ -334,7 +603,8 @@
 
  <!-- ################# Our Instructors Starts Here#######################--->    
 
-<div class="our-instructor">
+ 
+<!-- <div class="our-instructor" >
   <div class="container">
        <div class="session-title row">
           <h2>Our Instructors</h2>
@@ -378,8 +648,72 @@
       </div>
   </div>
 </div> 
-        
+         -->
 
+
+          <!-- ======= Team Section ======= -->
+  <section id="team" class="team section-bg  mt-3">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 class="text-center">TEAM</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/images/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/images/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/images/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+             
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/images/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
 
 
  <!-- ============bg-se-01  Section  Start============ -->
@@ -434,6 +768,9 @@
 
 <!-- ######################End Section######################## -->
 
+
+
+ 
 
 
 
@@ -510,89 +847,104 @@
               
         <!-- ============bg-se-04  Section  Start============ -->
 
+ <!-- ======= Contact Section ======= -->
+ <section id="contact" class="contact mt-5">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title text-center">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-12 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
 
 
+ <!-- ======= Footer ======= -->
+ <footer id="footer" >
+
+<div class="footer-newsletter">
+  <!-- <div class="container"> -->
 
 
-
-
-
-<!-- Footer -->
-
-
-<footer id="footer" class="section" style="width: 100%; ">
-
-<footer id="footer" class="section" style="width: 100%;">
-
-
-  <!-- container -->
+<div class="footer-top">
   <div class="container">
-
-    <!-- row -->
     <div class="row">
 
- 
+      <div class="col-lg-3 col-md-6 footer-contact">
+        <h3>Arsha</h3>
+        <p>
+          A108 Adam Street <br>
+          New York, NY 535022<br>
+          United States <br><br>
+          <strong>Phone:</strong> +1 5589 55488 55<br>
+          <strong>Email:</strong> info@example.com<br>
+        </p>
+      </div>
 
-      <!-- footer nav -->
-      <div class="col-12">
-        <ul class="footer-nav">
-          <li><a href="index.html">Home</a></li>
-
-          <li><a href="about.html">About</a></li>
-          <li><a href="course.html">Courses</a></li>
-
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
         </ul>
       </div>
-      <!-- /footer nav -->
 
-    </div>
-    <!-- /row -->
+      
 
-    <!-- row -->
-
-    <div id="bottom-footer" class="row" >
-
-    <div id="bottom-footer" class="row">
-
-
-
-
-      <!-- copyright -->
-      <div class="col-md-8 col-md-pull-4">
-        <div class="footer-copyright">
-          <span>&copy; Copyright 2018. All Rights Reserved.  <i class="fa fa-heart-o" aria-hidden="true"></i></span>
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Our Social Networks</h4>
+        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+        <div class="social-links mt-3">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+     
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+ 
         </div>
       </div>
-      <!-- /copyright -->
 
-
-
-            <!-- social -->
-            <div class="col-md-4 col-md-push-8">
-              <ul class="footer-social">
-                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-            <!-- /social -->
-
-
-
-
-    </div>
-    <!-- row -->
-
+    <!-- </div> -->
   </div>
-  <!-- /container -->
-
-</footer>
-<!-- /Footer -->
+              </div>
 
 
+</footer><!-- End Footer -->
 
 
 
