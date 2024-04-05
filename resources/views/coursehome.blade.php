@@ -27,28 +27,7 @@
 
 
 
-    <div class="header-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-12 left-item">
-                    <ul>
-                        <li><i class="fas fa-envelope-square"></i> sales@smarteyeapps.com</li>
-                        <li><i class="fas fa-phone-square"></i> +123 987 887 765</li>
-                    </ul>
-                </div>
-                <div class="col-lg-5 d-none d-lg-block right-item">
-                    <ul>
-                        <li><a><i class="fab fa-github"></i></a></li>
-                        <li><a><i class="fab fa-google-plus-g"></i></a></li>
-                        <li> <a><i class="fab fa-pinterest-p"></i></a></li>
-                        <li><a><i class="fab fa-twitter"></i></a></li>
-                        <li> <a><i class="fab fa-facebook-f"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-  
-        </div>
-    </div>
+
   
   
   
@@ -61,55 +40,32 @@
 
    
         
-     <div class="navbar-total">
-     
-      <nav
-        class=" navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-1"
-       >
-        <div class="container-fluid" style="background-color:#002db3; padding: 9px;">
-          <a class="navbar-brand ms-4" href="#"
-            ><img
-              src="Assets/images/logo.png"
-              alt="Smart Academy logo"
-              class="w-75 h-75"
-          /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a
-                  class="nav-link active text-white"
-                  aria-current="page"
-                  href="{{url('/')}}"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="{{url('about')}}">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="{{url('coursehome')}}">Courses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">College</a>
-              </li>
-       
-      
-            </ul>
-  
-            <button class="btn btn-outline-primary mx-5 px-5" type="submit">
-              Sign in
-            </button>
-          </div>
-        </div>
-      </nav>
+   <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+ 
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="{{url('/')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{url('about')}}">About</a></li>
+          <li><a class="nav-link scrollto" href="{{url('coursehome')}}">Course</a></li>
+          <li><a class="nav-link   scrollto" href="#portfolio">College</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+   
+          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+          <li><a class="getstarted scrollto" href="{{url('login')}}">Sing Up</a></li>
+        </ul>
+        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
+        <!-- <i class="fa-solid fa-bars mobile-nav-toggle"></i> -->
+      </nav><!-- .navbar -->
 
     </div>
-
-
+  </header><!-- End Header -->
 
               <!-- ============abt-01 Section  Start============ -->
 
@@ -120,7 +76,7 @@
                             <div class="heading-wrapper">
                                 <h3>Course</h3>
                                 <ol>
-                                    <li>Hmoe<i class="fa-solid fa-angles-right"></i></li>
+                                    <li>Home<i class="fa-solid fa-angles-right"></i></li>
                                     <li>Course</li>
                                 </ol>
                             </div>
@@ -219,70 +175,62 @@
 </div>  
 
 
-<!-- Footer -->
+<!-- ======= Footer ======= -->
+<footer id="footer" >
 
-<footer id="footer" class="section" style="width: 100%; ">
+<div class="footer-newsletter">
+  <!-- <div class="container"> -->
 
-    <!-- container -->
-    <div class="container">
-  
-      <!-- row -->
-      <div class="row">
-  
-   
-  
-        <!-- footer nav -->
-        <div class="col-12">
-          <ul class="footer-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <!-- /footer nav -->
-  
+
+<div class="footer-top">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 footer-contact">
+        <h3>Arsha</h3>
+        <p>
+          A108 Adam Street <br>
+          New York, NY 535022<br>
+          United States <br><br>
+          <strong>Phone:</strong> +1 5589 55488 55<br>
+          <strong>Email:</strong> info@example.com<br>
+        </p>
       </div>
-      <!-- /row -->
-  
-      <!-- row -->
-      <div id="bottom-footer" class="row" >
-  
-  
-  
-        <!-- copyright -->
-        <div class="col-md-8 col-md-pull-4">
-          <div class="footer-copyright">
-            <span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by </span>
-          </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Our Social Networks</h4>
+        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+        <div class="social-links mt-3">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+     
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+ 
         </div>
-        <!-- /copyright -->
-  
-  
-  
-              <!-- social -->
-              <div class="col-md-4 col-md-push-8">
-                <ul class="footer-social">
-                  <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                  <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
+      </div>
+
+    <!-- </div> -->
+  </div>
               </div>
-              <!-- /social -->
-  
-  
-  
-  
-      </div>
-      <!-- row -->
-  
-    </div>
-    <!-- /container -->
-  
-  </footer>
-  <!-- /Footer -->
+
+
+</footer><!-- End Footer -->
+
+
 
 
 

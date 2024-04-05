@@ -32,101 +32,58 @@
       
        @if(auth()->user()->status == 0)
 
-<div class="row">
 
-        <div class="col-lg-4">
-        <div class="card card-margin">
 
-            <div class="card-header no-border">
-                <h5 class="card-title">College</h5>
-            </div>
+       <div class="container">
 
-            <div class="card-body pt-0">
+        <div class="row">
 
-                <div class="widget-49">
-                    <div class="widget-49-title-wrapper">
-                        
-                        <div class="widget-49-date-success">
-                            <span class="widget-49-date-day">{{\App\Models\College::count()}}</span>
-                         
-                        </div>
 
-                        <div class="widget-49-meeting-info">
-                            <span class="widget-49-pro-title"></span>
-                   
-                        </div>
-                    </div>
-                
 
-                    <div class="widget-49-meeting-action">
-                        <a href="{{route('colleges.index')}}" class="btn btn-sm btn-flash-border-primary">View All</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="col-lg-4 col-sm-6">
+
+<div class="card-box bg-blue">
+    <div class="inner">
+        <h3> {{\App\Models\College::count()}} </h3>
+        <p>  College </p>
     </div>
-        <div class="col-lg-4">
-        <div class="card card-margin">
+    <a href="{{route('colleges.index')}}"class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+</div>
 
-            <div class="card-header no-border">
-                <h5 class="card-title">Classroom</h5>
-            </div>
+</div>
 
-            <div class="card-body pt-0">
+        <div class="col-lg-4 col-sm-6">
 
-                <div class="widget-49">
-                    <div class="widget-49-title-wrapper">
-                        
-                        <div class="widget-49-date-success">
-                            <span class="widget-49-date-day">{{\App\Models\Classroom::count()}}</span>
-                 
-                        </div>
-
-                        <div class="widget-49-meeting-info">
-                            <span class="widget-49-pro-title"></span>
-                           
-                        </div>
-                    </div>
-                
-
-                    <div class="widget-49-meeting-action">
-                        <a href="{{route('classrooms.index')}}" class="btn btn-sm btn-flash-border-primary">View All</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="card-box bg-blue">
+    <div class="inner">
+        <h3>{{\App\Models\Classroom::count()}} </h3>
+        <p>  Classroom </p>
     </div>
-        <div class="col-lg-4">
-        <div class="card card-margin">
+    <a href="{{route('classrooms.index')}}"class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+</div>
+</div>
 
-            <div class="card-header no-border">
-                <h5 class="card-title">Section</h5>
-            </div>
+        <div class="col-lg-4 col-sm-6">
 
-            <div class="card-body pt-0">
-
-                <div class="widget-49">
-                    <div class="widget-49-title-wrapper">
-                        
-                        <div class="widget-49-date-success">
-                            <span class="widget-49-date-day">{{\App\Models\Section::count()}}</span>
-    
-                        </div>
-
-                        <div class="widget-49-meeting-info">
-                            <span class="widget-49-pro-title"></span>
-               
-                        </div>
-                    </div>
-                
-
-                    <div class="widget-49-meeting-action">
-                        <a href="{{route('sections.index')}}" class="btn btn-sm btn-flash-border-primary">View All</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="card-box bg-blue">
+    <div class="inner">
+        <h3>{{\App\Models\Section::count()}} </h3>
+        <p>  Section </p>
     </div>
+    <a href="{{route('sections.index')}}"class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+</div>
+</div>
+
+
+
+
+          
+      </div>
+    </div>
+
+
+
+      
 @else 
 
 

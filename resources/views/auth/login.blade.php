@@ -22,6 +22,8 @@
     <!-- Sidemenu-respoansive-tabs css -->
     <link href="{{ URL::asset('Styles/sidemenu-responsive-tabs') }}" rel="stylesheet">
 
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <link
@@ -38,15 +40,15 @@
 
 
 
-      <section class="vh-100" style="background-color:#002db3;">
+      <section class="vh-100" style="background-color:#002db3">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col col-xl-10">
-          <div class="card" style="border-radius: 1rem;">
+          <div class="card" style="border-radius: 1rem;  padding:50px">
             <div class="row g-0">
               <div class="col-md-6 col-lg-5 d-none d-md-block">
-                <img src="{{ URL::asset('assets/images/startingcollege-58d177633df78c3c4ff303ba.jpg') }}" style="height: 100%;"
-                  alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                <img src="{{ URL::asset('assets/images/undraw_mobile_login_re_9ntv.svg') }}" style="height: 100%;"
+                  alt="login form" class="img-fluid animated" style="border-radius: 1rem 0 0 1rem;" />
               </div>
               <div class="col-md-6 col-lg-7 d-flex align-items-center">
                 <div class="card-body p-4 p-lg-5 text-black">

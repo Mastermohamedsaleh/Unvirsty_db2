@@ -22,6 +22,8 @@
 
 
 
+
+
 <!-- 
     <div class="header-top">
       <div class="container">
@@ -116,18 +118,20 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
+ 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Course</a></li>
+          <li><a class="nav-link scrollto active" href="{{url('/')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{url('about')}}">About</a></li>
+          <li><a class="nav-link scrollto" href="{{url('coursehome')}}">Course</a></li>
           <li><a class="nav-link   scrollto" href="#portfolio">College</a></li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
    
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
-          <li><a class="getstarted scrollto" href="#about">Sing Up</a></li>
+          <li><a class="getstarted scrollto" href="{{url('login')}}">Sing Up</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
+        <!-- <i class="fa-solid fa-bars mobile-nav-toggle"></i> -->
       </nav><!-- .navbar -->
 
     </div>
@@ -366,18 +370,19 @@
 		<!-- /About -->
 
 
-
-
-
-
-
     <!-- our fields -->
+
+
+    <div class="container">
+                <div class="row">
+                    <div class="heading">
+                        <h2>Our Fields</h2>
+                    </div>
+                </div>
+</div>
+</div>    
     <div class="container mb-5">
-      <div class="row">
-        <span class="fs-1 fw-semibold txt-darkblue text-center py-5"
-          >Our Fields</span
-        >
-      </div>
+
       <div class="row">
         <div class="col-lg-6 col-sm-12 p-0">
           <div
@@ -596,68 +601,22 @@
 <!-- our fields -->
 
 
-
-
-
-
-
- <!-- ################# Our Instructors Starts Here#######################--->    
-
- 
-<!-- <div class="our-instructor" >
-  <div class="container">
-       <div class="session-title row">
-          <h2>Our Instructors</h2>
-      </div>
-      <div class="instruct-row row">
-          <div class="col-md-3">
-              <div class="instruct-card">
-                  <img src="assets/images/avatar-2.jpg" alt="">
-              <h6>Andre Jhon</h6>
-              <p>Graphic Design</p>
-         
-              </div>
-          </div>
-           <div class="col-md-3">
-              <div class="instruct-card">
-                  <img src="assets/images/avatar-3.jpg" alt="">
-              <h6>Ahalkji Jhon</h6>
-              <p>Graphic Design</p>
-              
-     
-              </div>
-          </div>
-           <div class="col-md-3">
-              <div class="instruct-card">
-                  <img src="assets/images/avatar-5.jpg" alt="">
-              <h6>Reniju Sam</h6>
-              <p>Graphic Design</p>
-              
-      
-              </div>
-          </div>
-           <div class="col-md-3">
-              <div class="instruct-card">
-                  <img src="assets/images/avatar-4.jpg" alt="">
-              <h6>Depak Andrw</h6>
-              <p>Graphic Design</p>
-              
-      
-              </div>
-          </div>
-      </div>
-  </div>
-</div> 
-         -->
-
-
           <!-- ======= Team Section ======= -->
+
+          <div class="container">
+                <div class="row">
+                    <div class="heading">
+                        <h2>Team</h2>
+                    </div>
+                </div>
+</div>
+</div>   
+
+
   <section id="team" class="team section-bg  mt-3">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2 class="text-center">TEAM</h2>
-        </div>
+
 
         <div class="row">
 
@@ -774,29 +733,26 @@
 
 
 
-<!-- ============bg-se-03  Section  Start============ -->
+<!-- ################# popular Cources Starts Here#######################--->
 
 
-
-
-
-
-            <div class="container">
+<div class="container">
                 <div class="row">
                     <div class="heading">
                         <h2>Featured Courses</h2>
                     </div>
                 </div>
+</div>
+</div>     
 
 
-
-                <div class="popular-cources pc2">
+<div class="popular-cources pc2">
     <div class="container">
         
         <div class="row courc-ro">
             <div class="col-md-4">
                 <div class="courc-card">
-                    <img src="assets/images/course_1.jpg" alt="">
+                    <img src="   assets/images/course_1.jpg" alt="">
                     <div class="cource-det">
                         <h6>Graphic Design</h6>
                         <ul>
@@ -808,7 +764,7 @@
             </div>
             <div class="col-md-4">
                 <div class="courc-card">
-                    <img src="assets/images/course_2.jpg" alt="">
+                    <img src="   assets/images/course_2.jpg" alt="">
                     <div class="cource-det">
                         <h6>Online Marketing</h6>
                         <ul>
@@ -820,7 +776,7 @@
             </div>
             <div class="col-md-4">
                 <div class="courc-card">
-                    <img src="assets/images/course_3.jpg" alt="">
+                    <img src="   assets/images/course_3.jpg" alt="">
                     <div class="cource-det">
                         <h6>App Programing</h6>
                         <ul>
@@ -830,50 +786,66 @@
                     </div>
                 </div>
             </div>
-            
-       
 
 
-</div>
- 
+      
+        </div>
+    </div>
+</div>  
+
+
+
+
+               
+
+
 <div class="viewall">
 <a href="{{url('coursehome')}}" class="button-course">
-              <i class="fa-solid fa-arrow-right-long"></i> View More
+    <i class="fa-solid fa-arrow-right-long"></i> View More
 </a> 
 </div>
           
                 
 
               
-        <!-- ============bg-se-04  Section  Start============ -->
+      
 
  <!-- ======= Contact Section ======= -->
+
+
+ 
+
+<div class="container">
+                <div class="row">
+                    <div class="heading">
+                        <h2>CONTANCT</h2>
+                    </div>
+                </div>
+</div>
+</div>    
  <section id="contact" class="contact mt-5">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title text-center">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+
 
         <div class="row">
 
           <div class="col-lg-12 d-flex align-items-stretch">
             <div class="info">
               <div class="address">
-                <i class="bi bi-geo-alt"></i>
+              <i class="fa-solid fa-location-dot"></i>
                 <h4>Location:</h4>
                 <p>A108 Adam Street, New York, NY 535022</p>
               </div>
 
               <div class="email">
-                <i class="bi bi-envelope"></i>
+              <i class="fa-solid fa-envelope"></i>
                 <h4>Email:</h4>
                 <p>info@example.com</p>
               </div>
 
               <div class="phone">
-                <i class="bi bi-phone"></i>
+              <i class="fa-solid fa-phone"></i>
                 <h4>Call:</h4>
                 <p>+1 5589 55488 55s</p>
               </div>
