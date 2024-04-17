@@ -54,7 +54,7 @@
 
         <div class="col-lg-4 col-sm-6">
 
-<div class="card-box bg-blue">
+<div class="card-box bg-green">
     <div class="inner">
         <h3>{{\App\Models\Classroom::count()}} </h3>
         <p>  Classroom </p>
@@ -65,7 +65,7 @@
 
         <div class="col-lg-4 col-sm-6">
 
-<div class="card-box bg-blue">
+<div class="card-box bg-orange">
     <div class="inner">
         <h3>{{\App\Models\Section::count()}} </h3>
         <p>  Section </p>

@@ -39,9 +39,9 @@
 
           
       @if(\Auth::guard('admin')->user()->image_name == 'default.jpg')
-    <img src="{{URL::asset('Assets/images/default.jpg')}}" alt="" class="img-fluid my-5" style="width:60px; height:60px;   border-radius:50% ;">
+    <img src="{{URL::asset('Assets/images/default.jpg')}}" alt="" class="img-fluid my-5" style="width:150px; height:150px;   border-radius:50% ;">
     @else
-    <img src="{{asset('/image/'.\Auth::guard('admin')->user()->image_name)}}" alt="" class="img-fluid my-5" style="width:60px; height:60px;   border-radius:50% ;">         
+    <img src="{{asset('/image/'.\Auth::guard('admin')->user()->image_name)}}" alt="" class="img-fluid my-5" style="width:150px; height:150px;  border-radius:50% ;">         
        @endif
 
 

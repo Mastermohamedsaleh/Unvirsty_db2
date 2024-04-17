@@ -60,7 +60,7 @@
 <img src="{{URL::asset('courses/'.$lecture->course->image_name)}}" alt="" style="width:150px">
 @endif      
                         <ul>
-                            <li> <h4 class=" text-muted">{{$lecture->title}}</h4></li>
+                            <li><a href="{{route('lecture.show',$lecture->id)}}"><h4 >{{$lecture->title}}</h4></a> </li>
                             <li> <span class=" text-muted">{{$lecture->course->name}}</span></li>
                             <li> <span class=" text-muted">{{$lecture->college->name}}</span></li>
                             <li> <span class=" text-muted">{{$lecture->classroom->name}}</span></li>
@@ -70,17 +70,28 @@
                     </div>
  
                     <div class="mt-2">
-                    <a href="{{route('lecture.show',$lecture->id)}}" class="btn btn-primary btn-sm"><i class="fa-solid fa-eye"></i></a>
-<a href="{{route('lecture.edit',$lecture->id)}}" class="btn btn-success btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
 
+                    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-share"></i>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
 
-
-
-
-<button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deletelecture{{$lecture->id}}">
-<i class="fa-solid fa-trash"></i>
-</button><br><br>
+    <li><button type="button" class="btn btn-danger btn-sm dropdown-item" data-bs-toggle="modal" data-bs-target="#deletelecture{{$lecture->id}}">
+<i class="fa-solid fa-trash"></i>Delete
+</button></li>
+     <li><a href="{{route('lecture.edit',$lecture->id)}}" class="btn btn-success btn-sm dropdown-item"><i class="fa-solid fa-pen-to-square"></i>Edit</a></li>
+      <li><a href="{{route('lecture.show',$lecture->id)}}" class="btn btn-primary btn-sm dropdown-item"><i class="fa-solid fa-eye"></i>Show</a></li>
+    </ul>
+  </div>
 </div>
+
+
+</div>
+
+
+
+
 
 @include('Doctor.My_lecture.delete')
 

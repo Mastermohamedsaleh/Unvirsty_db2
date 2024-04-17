@@ -237,9 +237,9 @@
     <div class="row">
 
       <div class="col-lg-3 col-md-6 footer-contact">
-        <h3>Arsha</h3>
+        <h3>Smart Education</h3>
         <p>
-          A108 Adam Street <br>
+        Smart Education Street <br>
           New York, NY 535022<br>
           United States <br><br>
           <strong>Phone:</strong> +1 5589 55488 55<br>
