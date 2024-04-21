@@ -1,20 +1,5 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <style>
+   <style>
         .panel {display: none;}
     </style>
 

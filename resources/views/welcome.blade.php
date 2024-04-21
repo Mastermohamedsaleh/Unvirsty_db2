@@ -19,96 +19,9 @@
   </head>
 
   <body>
-
-
-
-
-
-<!-- 
-    <div class="header-top">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-7 col-md-12 left-item">
-                  <ul>
-                      <li><i class="fas fa-envelope-square"></i> sales@smarteyeapps.com</li>
-                      <li><i class="fas fa-phone-square"></i> +123 987 887 765</li>
-                  </ul>
-              </div>
-              <div class="col-lg-5 d-none d-lg-block right-item">
-                  <ul>
-                      <li><a><i class="fab fa-github"></i></a></li>
-                      <li><a><i class="fab fa-google-plus-g"></i></a></li>
-                      <li> <a><i class="fab fa-pinterest-p"></i></a></li>
-                      <li><a><i class="fab fa-twitter"></i></a></li>
-                      <li> <a><i class="fab fa-facebook-f"></i></a></li>
-                  </ul>
-              </div>
-          </div>
-
-      </div>
-  </div> -->
-
-
-<!-- 
-  <nav
-      class=" navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-1"
-     >
-      <div class="container-fluid" style="background:#1f60dd;padding:9px; marign-bottom:50px">
-        <a class="navbar-brand ms-4" href="#"
-          ><img
-            src="{{URL::asset('assets/images/logo.png') }}"
-            alt="Smart Academy logo"
-            class="w-75 h-75"
-        /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-                <a
-                  class="nav-link active text-white"
-                  aria-current="page"
-                  href="{{url('/')}}"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="{{url('about')}}">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="{{url('coursehome')}}">Courses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">College</a>
-              </li>
-       
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#"
-                >Contact us</a>
-          
-
-            </li>
-  
-    
-          </ul>
-
-          <a href="{{url('login')}}" class="btn btn-outline-primary mx-5 px-5" type="submit">
-            Sign in
-</a>
-        </div>
-      </div>
-    </nav> -->
   
 
-
-
-
-
-
-
-
+   
 
      <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -124,7 +37,7 @@
           <li><a class="nav-link scrollto active" href="{{url('/')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{url('about')}}">About</a></li>
           <li><a class="nav-link scrollto" href="{{url('coursehome')}}">Course</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">College</a></li>
+          <li><a class="nav-link   scrollto" href="#portfolio">Fileds</a></li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
    
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
@@ -138,27 +51,29 @@
   </header><!-- End Header -->
 
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" >
+
+
+
+
 
   
-
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" >
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <h1>Smart Education For Your Study</h1>
           <h2>Education is a transformative journey that empowers individuals and shapes societies. It is the key to unlocking knowledge</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="{{url('login')}}" class="btn-get-started scrollto">Sing Up</a>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/images/hero-img.png" class="img-fluid animated" alt="">
+          <img src="assets/images/undraw_education_f8ru.svg" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
-
   </section><!-- End Hero -->
 
 
@@ -167,144 +82,10 @@
 
  
 
-  <!-- <div class="row">
-  
-   
-
-   <div class="col">
-     sacasckasnlvnkla
-   </div> 
-
-
-   <div class="col">
-
-   <img src="assets/images/undraw_certification_re_ifll.svg" alt="">
-
-   </div>
  
 
-  </div>
- -->
 
 
-
-    <!-- navbar -->
-    <!-- <nav
-      class=" navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-1"
-     >
-      <div class="container-fluid" style="background-color:#002db3; padding: 9px;">
-        <a class="navbar-brand ms-4" href="#"
-          ><img
-            src="{{URL::asset('assets/images/logo.png') }}"
-            alt="Smart Academy logo"
-            class="w-75 h-75"
-        /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-                <a
-                  class="nav-link active text-white"
-                  aria-current="page"
-                  href="{{url('/')}}"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="{{url('about')}}">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="{{url('coursehome')}}">Courses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">College</a>
-              </li>
-       
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#"
-                >Contact us</a>
-          
-
-            </li>
-  
-    
-          </ul>
-
-          <a href="{{url('login')}}" class="btn btn-outline-primary mx-5 px-5" type="submit">
-            Sign in
-</a>
-        </div>
-      </div>
-    </nav> -->
-
-    <!-- carousel -->
-   <!-- <div
-      id="carouselExampleAutoPlaying"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active c-item">
-          <img src="{{URL::asset('assets/images/elmhurst-university-gates-v3-hero-image.jpg') }}"  class="d-block w-100 c-img" alt="1" />
-        </div>
-        <div class="carousel-item c-item">
-          <img src="{{URL::asset('assets/images/edd01-1.jpg') }}"  class="d-block w-100 c-img" alt="1" />
-        </div>
-      </div>
-    </div>
-
-    <div class="what-we-offer d-flex flex-column align-items-center">
-      <div class="container border border-0 shadow rounded-top-3 my-3 w-75">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card border border-0 p-3 d-flex flex-row">
-              <div class="icon mx-3 my-1">
-                <img src="Assets/images/3.png" alt="" />
-              </div>
-              <div class="txt d-flex flex-column">
-                <span class="s1 fw-bold">University Life</span>
-                <span class="s2">Over in Here</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card border border-0 p-3 d-flex flex-row">
-              <div class="icon mx-3 my-1">
-                <img src="Assets/images/4.png" alt="" />
-              </div>
-              <div class="txt d-flex flex-column">
-                <span class="s1 fw-bold">University Life</span>
-                <span class="s2">Over in Here</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card border border-0 p-3 d-flex flex-row">
-              <div class="icon mx-3 my-1">
-                <img src="Assets/images/5.png" alt="" />
-              </div>
-              <div class="txt d-flex flex-column">
-                <span class="s1 fw-bold">University Life</span>
-                <span class="s2">Over in Here</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card border border-0 p-3 d-flex flex-row">
-              <div class="icon mx-3 my-1">
-                <img src="Assets/images/6.png" alt="" />
-              </div>
-              <div class="txt d-flex flex-column">
-                <span class="s1 fw-bold">University Life</span>
-                <span class="s2">Over in Here</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
 
 
 
@@ -319,8 +100,8 @@
 
 					<div class="col-md-6">
 						<div class="section-header">
-							<h2>Welcome to Edusite</h2>
-							<p class="lead">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
+							<h2>Welcome to Smart Education</h2>
+							<!-- <p class="lead">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p> -->
 						</div>
 
 						<!-- feature -->
@@ -328,7 +109,7 @@
               <i class="feature-icon fa-solid fa-flask"></i>
 							<div class="feature-content">
 								<h4>Online Courses </h4>
-								<p>Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas veniam nominati.</p>
+								<p>Online courses are a form of e-learning, where educational content is delivered electronically through digital platforms and resources. E-learning allows learners to access courses remotely and study at their own pace .</p>
 							</div>
 						</div>
 						<!-- /feature -->
@@ -337,8 +118,8 @@
 						<div class="feature">
 							<i class="feature-icon fa fa-users"></i>
 							<div class="feature-content">
-								<h4>Expert Teachers</h4>
-								<p>Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas veniam nominati.</p>
+								<h4>Expert Doctors</h4>
+								<p>Expert Doctors have mastered their subject matter and possess a deep understanding of the content they teach. They have extensive knowledge and expertise in their field, allowing them to convey complex concepts in a clear and accessible manner.</p>
 							</div>
 						</div>
 						<!-- /feature -->
@@ -348,7 +129,7 @@
 							<i class="feature-icon fa fa-comments"></i>
 							<div class="feature-content">
 								<h4>Community</h4>
-								<p>Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas veniam nominati.</p>
+								<p>Community universities, also known as community colleges or junior colleges, play a crucial role in higher education by offering accessible and affordable educational opportunities to a wide range of students. Here are some words associated.</p>
 							</div>
 						</div>
 						<!-- /feature -->
@@ -519,86 +300,52 @@
 
 
 
+<section class="bg-se-04">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="_lk_bg_cd">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <div class="counting" data-count="20">2002</div>
+                    <h5>YEAR OF HISTORY</h5>
+                </div>
+            </div>
 
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="_lk_bg_cd">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div class="counting" data-count="80">1000</div>
+                    <h5>STUDENTS</h5>
+                </div>
+            </div>
 
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="_lk_bg_cd">
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="counting" data-count="27">100</div>
+                    <h5>COURSES</h5>
+                </div>
+            </div>
 
-
-
-
-
-      
-
-
-
- <!-- About university -->
- <div class="about-university py-3" style="width:100% ;">
-  <div class="container z-2">
-    <div class="row my-5 py-5">
-      <div class="col-sm-5">
-        <section class="d-flex flex-column my-4">
-          <div class="heading fs-1 fw-semibold txt-primary mb-5">
-            About Our University
-          </div>
-          <img class="w-50" src="Assets/images/logo.png" alt="" />
-        </section>
-      </div>
-      <div class="col-sm-7">
-        <section>
-          <div class="heading text-white">
-            <p class="fs-1 fw-semibold my-2">
-              Smart Education: Empowering Minds, Shaping Futures
-            </p>
-
-            <p class="fs-4 my-5 txt-gray">
-              At  Smart Education, we believe in the transformative power of
-              education to unlock the full potential of individuals and
-              drive positive change in the world. Our university is
-              dedicated to fostering a dynamic learning environment that
-              blends academic excellence with real-world applications,
-              equipping students with the skills and knowledge needed to
-              thrive in a rapidly evolving global landscape.
-            </p>
-          </div>
-        </section>
-      </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="_lk_bg_cd">
+                <i class="fa-solid fa-person-chalkboard"></i>
+                    <div class="counting" data-count="62">50</div>
+                    <h5>Doctors</h5>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row my-4">
-      <div class="col-sm-3">
-        <section class="m-3 p-2 text-center">
-          <div class="card border-0 bg-transparent">
-            <div class="span fs-1 fw-semibold txt-primary">22</div>
-            <div class="span fs-3 text-white">Certified Professors</div>
-          </div>
-        </section>
-      </div>
-      <div class="col-sm-3">
-        <section class="m-3 p-2 text-center">
-          <div class="card border-0 bg-transparent">
-            <div class="span fs-1 fw-semibold txt-primary">2000</div>
-            <div class="span fs-3 text-white">Students</div>
-          </div>
-        </section>
-      </div>
-      <div class="col-sm-3">
-        <section class="m-3 p-2 text-center">
-          <div class="card border-0 bg-transparent">
-            <div class="span fs-1 fw-semibold txt-primary">4</div>
-            <div class="span fs-3 text-white">Education Fields</div>
-          </div>
-        </section>
-      </div>
-      <div class="col-sm-3">
-        <section class="m-3 p-2 text-center">
-          <div class="card border-0 bg-transparent">
-            <div class="span fs-1 fw-semibold txt-primary">40</div>
-            <div class="span fs-3 text-white">Awards Won</div>
-          </div>
-        </section>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- our fields -->
+</section>
+
+
+
+
+
+
+
+
+
 
 
           <!-- ======= Team Section ======= -->
@@ -620,37 +367,45 @@
 
         <div class="row">
 
+
+
+
+        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/images/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Super Manager</span>
+                <p>University managers provide strong leadership and vision for the institution. They set goals and establish priorities.</p>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="assets/images/team-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <span>Doctor CS</span>
+                <p> possess a high level of technical proficiency in the subject. They have a strong command of programming languages and algorithms .</p>
   
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/images/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-
-              </div>
-            </div>
-          </div>
+ 
 
           <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="assets/images/team-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <span>Manger Systems and information management</span>
+                <p>Managers in systems and information management engage in strategic planning to align technology and information .</p>
              
 
               </div>
@@ -662,8 +417,8 @@
               <div class="pic"><img src="assets/images/team-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <span>Manger Engineering</span>
+                <p>Engineering managers possess a strong foundation of technical knowledge and expertise in engineering principles and practices.</p>
 
               </div>
             </div>
@@ -696,28 +451,24 @@
           <div class="col-lg-6 col-md-6 col-sm-12 col-12">
               <div class="main-card">
                   <div class="content">
-                      <ol>
-                          <li>
-                              <h3>VARITY COURSES</h3>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas magnam quae 
-                                  voluptatum voluptates asperiores iusto errorquo sed nobis</p>
-                          </li>
-                          <li>
-                              <h3>ATTRACTIVE PRICES</h3>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas magnam quae 
-                                  voluptatum voluptates asperiores iustoerrorquo sed nobis</p>
-                          </li>
-                          <li>
-                              <h3>EVENTS</h3>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas magnam quae
-                                  voluptatum voluptates asperiores iustoerrorquo sed nobis</p>
-                          </li>
-                          <li>
-                              <h3>TALENTE TEACHERS</h3>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas magnam quae
-                                  voluptatum voluptates asperiores iustoerrorquo sed nobis</p>
-                          </li>
-                      </ol>
+                   
+     
+                
+     
+         <i class="fa-solid fa-angles-right" class="txt-pre"></i><span class="txt-bold"> VARITY COURSES</span>   
+
+      
+                              <p>Flexibility: Varied courses provide students with the flexibility to choose from a diverse array of subjects. This flexibility allows students to tailor their academic journey to their interests, strengths, and career aspirations.</p>
+                      
+                                  <i class="fa-solid fa-angles-right" class="txt-pre"></i><span class="txt-bold"> ATTRACTIVE PRICES</span>
+                              <p>Affordability: Attractive prices in universities make education more accessible and affordable for a wider range of students. Lower tuition fees can alleviate financial burdens and enable students from diverse backgrounds to pursue higher education.</p>
+                    
+                                  <i class="fa-solid fa-angles-right" class="txt-pre"></i><span class="txt-bold"> EVENTS</span>
+                              <p>Community Building: University events serve as a platform for community building, bringing together students, faculty, staff, and even alumni. They create opportunities for interaction, networking, and forming connections among individuals from diverse backgrounds and disciplines.</p>
+                    
+                                  <i class="fa-solid fa-angles-right" class="txt-pre"></i><span class="txt-bold"> TALENTE Doctors</span>
+                              <p>Subject Matter Expertise: Talented Doctors have a deep understanding of the subjects they teach. They possess extensive knowledge and expertise in their respective fields, allowing them to deliver accurate and comprehensive instruction to their students.</p>
+                 
                   </div>
               </div>
           </div>
@@ -726,10 +477,6 @@
 </section>
 
 <!-- ######################End Section######################## -->
-
-
-
- 
 
 
 
@@ -742,8 +489,10 @@
                         <h2>Featured Courses</h2>
                     </div>
                 </div>
-</div>
+
 </div>     
+
+
 
 
 <div class="popular-cources pc2">
@@ -752,11 +501,11 @@
         <div class="row courc-ro">
             <div class="col-md-4">
                 <div class="courc-card">
-                    <img src="   assets/images/course_1.jpg" alt="">
+                    <img src="assets/images/course_1.jpg" alt="">
                     <div class="cource-det">
                         <h6>Graphic Design</h6>
                         <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon <span>Free</span></li>
+                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon  </li>
                             <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
                         </ul>
                     </div>
@@ -768,7 +517,7 @@
                     <div class="cource-det">
                         <h6>Online Marketing</h6>
                         <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon <span>Free</span></li>
+                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon  </li>
                             <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
                         </ul>
                     </div>
@@ -780,7 +529,7 @@
                     <div class="cource-det">
                         <h6>App Programing</h6>
                         <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon <span>Free</span></li>
+                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon  </li>
                             <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
                         </ul>
                     </div>
@@ -796,20 +545,7 @@
 
 
 
-               
-
-
-<div class="viewall">
-<a href="{{url('coursehome')}}" class="button-course">
-    <i class="fa-solid fa-arrow-right-long"></i> View More
-</a> 
-</div>
-          
-                
-
               
-      
-
  <!-- ======= Contact Section ======= -->
 
 
@@ -825,9 +561,6 @@
 </div>    
  <section id="contact" class="contact mt-5">
       <div class="container" data-aos="fade-up">
-
-
-
         <div class="row">
 
           <div class="col-lg-12 d-flex align-items-stretch">
@@ -835,7 +568,7 @@
               <div class="address">
               <i class="fa-solid fa-location-dot"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>A1011 AS Street, New Cairo, NY 535022</p>
               </div>
 
               <div class="email">
@@ -863,64 +596,53 @@
     </section><!-- End Contact Section -->
 
 
+
  <!-- ======= Footer ======= -->
- <footer id="footer" >
+ <footer id="footer">
 
-<div class="footer-newsletter">
-  <!-- <div class="container"> -->
-
-
-<div class="footer-top">
+	
+<div class="footer-top" >
   <div class="container">
     <div class="row">
 
-      <div class="col-lg-3 col-md-6 footer-contact">
+      <div class="col-lg-4 col-md-6 footer-contact">
         <h3>Smart Education</h3>
         <p>
-        Smart Education Street <br>
-          New York, NY 535022<br>
-          United States <br><br>
+          A1011 AS Street <br>
+          New Cairo, NY 535022<br>
+           Cairo <br><br>
           <strong>Phone:</strong> +1 5589 55488 55<br>
           <strong>Email:</strong> info@example.com<br>
         </p>
       </div>
 
-      <div class="col-lg-3 col-md-6 footer-links">
+      <div class="col-lg-4 col-md-6 footer-links">
         <h4>Useful Links</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
           <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Courses</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Fileds</a></li>
         </ul>
       </div>
 
-      
 
-      <div class="col-lg-3 col-md-6 footer-links">
+      <div class="col-lg-4 col-md-6 footer-links">
         <h4>Our Social Networks</h4>
-        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
         <div class="social-links mt-3">
-          <a href="#" class="twitter"><i class="fa fa-twitter"></i></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></i></a>
           <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
           <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-     
           <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
- 
         </div>
       </div>
 
-    <!-- </div> -->
+    </div>
   </div>
-              </div>
+</div>
 
 
 </footer><!-- End Footer -->
-
-
-
-
 
 
   </body>

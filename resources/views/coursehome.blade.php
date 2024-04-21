@@ -54,7 +54,7 @@
           <li><a class="nav-link scrollto active" href="{{url('/')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{url('about')}}">About</a></li>
           <li><a class="nav-link scrollto" href="{{url('coursehome')}}">Course</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">College</a></li>
+          <li><a class="nav-link   scrollto" href="#portfolio">Fileds</a></li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
    
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
@@ -104,7 +104,7 @@
                     <div class="cource-det">
                         <h6>Graphic Design</h6>
                         <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon <span>Free</span></li>
+                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon </li>
                             <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
                         </ul>
                     </div>
@@ -116,7 +116,7 @@
                     <div class="cource-det">
                         <h6>Online Marketing</h6>
                         <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon <span>Free</span></li>
+                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon   </li>
                             <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
                         </ul>
                     </div>
@@ -128,7 +128,7 @@
                     <div class="cource-det">
                         <h6>App Programing</h6>
                         <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon <span>Free</span></li>
+                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon   </li>
                             <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
                         </ul>
                     </div>
@@ -140,7 +140,7 @@
                     <div class="cource-det">
                         <h6>JEE Complete</h6>
                         <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon <span>Free</span></li>
+                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon   </li>
                             <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
                         </ul>
                     </div>
@@ -152,7 +152,7 @@
                     <div class="cource-det">
                         <h6>.Net Programin</h6>
                         <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon <span>Free</span></li>
+                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon   </li>
                             <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
                         </ul>
                     </div>
@@ -164,7 +164,7 @@
                     <div class="cource-det">
                         <h6>Android Develpment</h6>
                         <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon <span>Free</span></li>
+                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon   </li>
                             <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
                         </ul>
                     </div>
@@ -175,57 +175,49 @@
 </div>  
 
 
-<!-- ======= Footer ======= -->
-<footer id="footer" >
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
 
-<div class="footer-newsletter">
-  <!-- <div class="container"> -->
-
-
-<div class="footer-top">
+	
+<div class="footer-top" >
   <div class="container">
     <div class="row">
 
-      <div class="col-lg-3 col-md-6 footer-contact">
+      <div class="col-lg-4 col-md-6 footer-contact">
         <h3>Smart Education</h3>
         <p>
-        Smart Education Street <br>
-          New York, NY 535022<br>
-          United States <br><br>
+          A1011 AS Street <br>
+          New Cairo, NY 535022<br>
+           Cairo <br><br>
           <strong>Phone:</strong> +1 5589 55488 55<br>
           <strong>Email:</strong> info@example.com<br>
         </p>
       </div>
 
-      <div class="col-lg-3 col-md-6 footer-links">
+      <div class="col-lg-4 col-md-6 footer-links">
         <h4>Useful Links</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
           <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Courses</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Fileds</a></li>
         </ul>
       </div>
 
-      
 
-      <div class="col-lg-3 col-md-6 footer-links">
+      <div class="col-lg-4 col-md-6 footer-links">
         <h4>Our Social Networks</h4>
-        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
         <div class="social-links mt-3">
-          <a href="#" class="twitter"><i class="fa fa-twitter"></i></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></i></a>
           <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
           <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-     
           <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
- 
         </div>
       </div>
 
-    <!-- </div> -->
+    </div>
   </div>
-              </div>
+</div>
 
 
 </footer><!-- End Footer -->

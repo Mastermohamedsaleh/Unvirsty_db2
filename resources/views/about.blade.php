@@ -89,16 +89,10 @@
                         <div class="abt-spirit">
                             <div class="abt-content-card">
                                 <h2>About Us</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur veritatis fugit est
-                                    provident quibusdam quis reiciendis, beatae neque harum maxime laborum. Esse, deserunt sunt debitis
-                                    quasi officiis molestiae necessitatibus.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur veritatis fugit est
-                                    provident quibusdam quis reiciendis, beatae neque harum maxime laborum. Esse, deserunt sunt debitis
-                                    quasi officiis</p>
+                                <p>A more interactive and collaborative way of learning has been introduced that has so many benefits. It is beneficial for doctors and students since doctors get an entire platform to pick information from and teach instead of just being restricted to a book. Students get to pay more attention in class and find studying fun..</p>
+      
                     
-                                <span>
-                                    <a href="#">Follow Us</a>
-                                </span>
+                         
                             </div>
                         </div>
                     </div>
@@ -116,7 +110,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="_lk_bg_cd">
                     <i class="fa-solid fa-clock-rotate-left"></i>
-                    <div class="counting" data-count="20">100</div>
+                    <div class="counting" data-count="20">2002</div>
                     <h5>YEAR OF HISTORY</h5>
                 </div>
             </div>
@@ -124,8 +118,8 @@
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="_lk_bg_cd">
                     <i class="fa-solid fa-graduation-cap"></i>
-                    <div class="counting" data-count="80">100</div>
-                    <h5>ACTIVE STUDENTS</h5>
+                    <div class="counting" data-count="80">1000</div>
+                    <h5>STUDENTS</h5>
                 </div>
             </div>
 
@@ -133,15 +127,15 @@
                 <div class="_lk_bg_cd">
                     <i class="fa-solid fa-globe"></i>
                     <div class="counting" data-count="27">100</div>
-                    <h5>ONLINE COURSES</h5>
+                    <h5>COURSES</h5>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="_lk_bg_cd">
-                    <i class="fa-solid fa-registered"></i>
-                    <div class="counting" data-count="62">100</div>
-                    <h5>REGISTERED STUDENTS</h5>
+                <i class="fa-solid fa-person-chalkboard"></i>
+                    <div class="counting" data-count="62">50</div>
+                    <h5>Doctors</h5>
                 </div>
             </div>
         </div>
@@ -157,47 +151,62 @@
 
  <!-- ################# Our Instructors Starts Here#######################--->    
 
-         <!-- ======= Team Section ======= -->
-         <section id="team" class="team section-bg  mt-3">
+ <div class="container">
+                <div class="row">
+                    <div class="heading">
+                        <h2>Team</h2>
+                    </div>
+                </div>
+</div>
+</div>   
+
+
+  <section id="team" class="team section-bg  mt-3">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2 class="text-center">TEAM</h2>
-        </div>
+
 
         <div class="row">
+
+
+
+
+        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/images/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Super Manager</span>
+                <p>University managers provide strong leadership and vision for the institution. They set goals and establish priorities.</p>
+
+              </div>
+            </div>
+          </div>
+
+
+
 
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="assets/images/team-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <span>Doctor CS</span>
+                <p> possess a high level of technical proficiency in the subject. They have a strong command of programming languages and algorithms .</p>
   
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/images/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-
-              </div>
-            </div>
-          </div>
+ 
 
           <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="assets/images/team-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <span>Manger Systems and information management</span>
+                <p>Managers in systems and information management engage in strategic planning to align technology and information .</p>
              
 
               </div>
@@ -209,8 +218,8 @@
               <div class="pic"><img src="assets/images/team-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <span>Manger Engineering</span>
+                <p>Engineering managers possess a strong foundation of technical knowledge and expertise in engineering principles and practices.</p>
 
               </div>
             </div>
@@ -220,67 +229,56 @@
 
       </div>
     </section><!-- End Team Section -->
-
           
 
      
      
       <!-- ======= Footer ======= -->
- <footer id="footer" >
+ <footer id="footer">
 
-<div class="footer-newsletter">
-  <!-- <div class="container"> -->
-
-
-<div class="footer-top">
+	
+<div class="footer-top" >
   <div class="container">
     <div class="row">
 
-      <div class="col-lg-3 col-md-6 footer-contact">
+      <div class="col-lg-4 col-md-6 footer-contact">
         <h3>Smart Education</h3>
         <p>
-        Smart Education Street <br>
-          New York, NY 535022<br>
-          United States <br><br>
+          A1011 AS Street <br>
+          New Cairo, NY 535022<br>
+           Cairo <br><br>
           <strong>Phone:</strong> +1 5589 55488 55<br>
           <strong>Email:</strong> info@example.com<br>
         </p>
       </div>
 
-      <div class="col-lg-3 col-md-6 footer-links">
+      <div class="col-lg-4 col-md-6 footer-links">
         <h4>Useful Links</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
           <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Courses</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Fileds</a></li>
         </ul>
       </div>
 
-      
 
-      <div class="col-lg-3 col-md-6 footer-links">
+      <div class="col-lg-4 col-md-6 footer-links">
         <h4>Our Social Networks</h4>
-        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
         <div class="social-links mt-3">
-          <a href="#" class="twitter"><i class="fa fa-twitter"></i></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></i></a>
           <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
           <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-     
           <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
- 
         </div>
       </div>
 
-    <!-- </div> -->
+    </div>
   </div>
-              </div>
+</div>
 
 
 </footer><!-- End Footer -->
-
-      
 
 
 
