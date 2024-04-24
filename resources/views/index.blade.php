@@ -88,103 +88,60 @@
 
 
 
+<div class="container">
+
 <div class="row">
 
-        <div class="col-lg-4">
-        <div class="card card-margin">
 
-            <div class="card-header no-border">
-                <h5 class="card-title">Students</h5>
-            </div>
 
-            <div class="card-body pt-0">
+<div class="col-lg-4 col-sm-6">
 
-                <div class="widget-49">
-                    <div class="widget-49-title-wrapper">
-                        
-                        <div class="widget-49-date-success">
-                            <span class="widget-49-date-day">{{\App\Models\Student::where('college_id',auth()->user()->college_id)->count()}}</span>
-                         
-                        </div>
+<div class="card-box bg-blue">
+<div class="inner">
+<h3> {{\App\Models\Student::where('college_id',auth()->user()->college_id)->count()}} </h3>
+<p>  Students </p>
+</div>
+<a href="{{route('students.index')}}"class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+</div>
 
-                        <div class="widget-49-meeting-info">
-                            <span class="widget-49-pro-title"></span>
-                   
-                        </div>
-                    </div>
-                
+</div>
 
-                    <div class="widget-49-meeting-action">
-                        <a href="{{route('students.index')}}" class="btn btn-sm btn-flash-border-primary">View All</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="col-lg-4">
-        <div class="card card-margin">
+<div class="col-lg-4 col-sm-6">
 
-            <div class="card-header no-border">
-                <h5 class="card-title">Doctors</h5>
-            </div>
+<div class="card-box bg-green">
+<div class="inner">
+<h3>{{\App\Models\Doctor::where('college_id',auth()->user()->college_id)->count()}} </h3>
+<p>  Doctors </p>
+</div>
+<a href="{{route('classrooms.index')}}"class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+</div>
+</div>
 
-            <div class="card-body pt-0">
+<div class="col-lg-4 col-sm-6">
 
-                <div class="widget-49">
-                    <div class="widget-49-title-wrapper">
-                        
-                        <div class="widget-49-date-success">
-                            <span class="widget-49-date-day">{{\App\Models\Doctor::where('college_id',auth()->user()->college_id)->count()}}</span>
-                 
-                        </div>
+<div class="card-box bg-orange">
+<div class="inner">
+<h3>{{\App\Models\Course::where('college_id',auth()->user()->college_id)->count()}} </h3>
+<p>  Course </p>
+</div>
+<a href="{{route('sections.index')}}"class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+</div>
+</div>
 
-                        <div class="widget-49-meeting-info">
-                            <span class="widget-49-pro-title"></span>
-                           
-                        </div>
-                    </div>
-                
 
-                    <div class="widget-49-meeting-action">
-                        <a href="{{route('doctors.index')}}" class="btn btn-sm btn-flash-border-primary">View All</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="col-lg-4">
-        <div class="card card-margin">
 
-            <div class="card-header no-border">
-                <h5 class="card-title">Accountants</h5>
-            </div>
 
-            <div class="card-body pt-0">
+  
+</div>
+</div>
 
-                <div class="widget-49">
-                    <div class="widget-49-title-wrapper">
-                        
-                        <div class="widget-49-date-success">
-                            <span class="widget-49-date-day">{{\App\Models\Accountant::where('college_id',auth()->user()->college_id)->count()}}</span>
-    
-                        </div>
 
-                        <div class="widget-49-meeting-info">
-                            <span class="widget-49-pro-title"></span>
-               
-                        </div>
-                    </div>
-                
 
-                    <div class="widget-49-meeting-action">
-                        <a href="" class="btn btn-sm btn-flash-border-primary">View All</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    </div>
+
+
+
+
 
 
 
@@ -195,8 +152,8 @@
 
 
 
-@if(\Auth::guard('admin')->user()->status == 1)
 
+@if(auth()->user()->status == 1)
  
 <div id="calendar"></div>
 
@@ -215,7 +172,7 @@
     </div>
    
 
- 
+
 
 
 <script>
@@ -241,6 +198,7 @@ var calendar = $('#calendar').fullCalendar({
     select:function(start, end, allDay)
     {
         var title = prompt('Event Title:');
+    
 
         if(title)
         {

@@ -43,13 +43,38 @@ class ExamScheduleController extends Controller
 
     try{  
       $course_id = $request->course_id;
+
+      if($course_id == NULL) {
+        Session::flash('danger', 'Add name Course'); 
+        return redirect()->back();
+    }
+
+
       $college_id = $request->college_id;
       $classroom_id = $request->classroom_id ;
       $section_id = $request->section_id ;
-      $exam_date = $request->exam_date ;
+      $exam_date = $request->exam_date;
+
+      if($request->exam_date == NULL){
+        Session::flash('danger', 'Please Add Date'); 
+        return redirect()->back();
+    }
+
       $start_time = $request->start_time ;
       $end_time = $request->end_time ;
+      if($end_time == NULL || $start_time == NULL) {
+        Session::flash('danger', 'Please Add Time'); 
+        return redirect()->back();
+    }
     
+
+  
+
+ 
+
+
+
+
       for($i =0 ; $i < count($course_id) ; $i++){
         $insert = [
             'course_id'=>$course_id[$i],

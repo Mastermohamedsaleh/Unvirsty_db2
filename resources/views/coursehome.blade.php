@@ -98,128 +98,91 @@
     <div class="container">
         
         <div class="row courc-ro">
+        <?php $courses = App\Models\Course::paginate(6); ?>
+        @foreach($courses as $course)
             <div class="col-md-4">
                 <div class="courc-card">
-                    <img src="assets/images/course_1.jpg" alt="">
+      @if( $course->image_name == 'course_default.jpg')
+       <img src="{{URL::asset('assets/images/course_default.jpg')}}" alt="SomeThing Wrong"  >
+    @else
+    <img src="{{asset('/courses/'.$course->image_name)}}" alt="" >         
+    @endif
+
+
+
+                    <!-- <img src="assets/images/course_1.jpg" alt=""> -->
                     <div class="cource-det">
-                        <h6>Graphic Design</h6>
+                        <h6>{{$course->name}}</h6>
                         <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon </li>
-                            <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
+                            <li><i class="fas fa-graduation-cap"></i> {{$course->doctor->name}} </li>
+                            <li><i class="far fa-calendar-plus"></i>{{$course->college->name}}</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="courc-card">
-                    <img src="assets/images/course_2.jpg" alt="">
-                    <div class="cource-det">
-                        <h6>Online Marketing</h6>
-                        <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon   </li>
-                            <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="courc-card">
-                    <img src="assets/images/course_3.jpg" alt="">
-                    <div class="cource-det">
-                        <h6>App Programing</h6>
-                        <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon   </li>
-                            <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="courc-card">
-                    <img src="assets/images/course_4.jpg" alt="">
-                    <div class="cource-det">
-                        <h6>JEE Complete</h6>
-                        <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon   </li>
-                            <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="courc-card">
-                    <img src="assets/images/course_5.jpg" alt="">
-                    <div class="cource-det">
-                        <h6>.Net Programin</h6>
-                        <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon   </li>
-                            <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="courc-card">
-                    <img src="assets/images/course_6.jpg" alt="">
-                    <div class="cource-det">
-                        <h6>Android Develpment</h6>
-                        <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon   </li>
-                            <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
-                        </ul>
-                    </div>
-                </div>
+            @endforeach
+     
+       
+  
+
             </div>
         </div>
     </div>
 </div>  
 
 
- <!-- ======= Footer ======= -->
- <footer id="footer">
 
-	
+{{ $courses->links() }}
+
+  <!-- ======= Footer ======= -->
+  <?php   $setting = App\Models\Setting::all();     ?>
+
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+   
 <div class="footer-top" >
-  <div class="container">
-    <div class="row">
+ <div class="container">
+   <div class="row">
+@foreach($setting as $s)
+     <div class="col-lg-4 col-md-6 footer-contact">
+       <h3>Smart Education</h3>
+       <p>
+         {{$s->address}} <br>
+         New Cairo, NY 535022<br>
+          Cairo <br><br>
+         <strong>Phone:</strong> +{{$s->phone}}<br>
+         <strong>Email:</strong> {{$s->email}}<br>
+       </p>
+     </div>
 
-      <div class="col-lg-4 col-md-6 footer-contact">
-        <h3>Smart Education</h3>
-        <p>
-          A1011 AS Street <br>
-          New Cairo, NY 535022<br>
-           Cairo <br><br>
-          <strong>Phone:</strong> +1 5589 55488 55<br>
-          <strong>Email:</strong> info@example.com<br>
-        </p>
-      </div>
-
-      <div class="col-lg-4 col-md-6 footer-links">
-        <h4>Useful Links</h4>
-        <ul>
-        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Courses</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Fileds</a></li>
-        </ul>
-      </div>
+     <div class="col-lg-4 col-md-6 footer-links">
+       <h4>Useful Links</h4>
+       <ul>
+       <li><i class="fa-solid fa-angle-right"></i> <a href="#">Home</a></li>
+         <li><i class="fa-solid fa-angle-right"></i> <a href="#">About us</a></li>
+         <li><i class="fa-solid fa-angle-right"></i> <a href="#">Courses</a></li>
+         <li><i class="fa-solid fa-angle-right"></i> <a href="#">Fileds</a></li>
+       </ul>
+     </div>
 
 
-      <div class="col-lg-4 col-md-6 footer-links">
-        <h4>Our Social Networks</h4>
-        <div class="social-links mt-3">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></i></a>
-          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        </div>
-      </div>
+     <div class="col-lg-4 col-md-6 footer-links">
+       <h4>Our Social Networks</h4>
+       <div class="social-links mt-3">
+       <a href="{{$s->link_twitter}}" class="twitter"><i class="fa fa-twitter"></i></i></a>
+         <a href="{{$s->link_facebook}}" class="facebook"><i class="fa fa-facebook"></i></a>
+         <a href="{{$s->link_instagram}}" class="instagram"><i class="fa fa-instagram"></i></a>
+         <a href="{{$s->link_linked_in}}" class="linkedin"><i class="fa fa-linkedin"></i></a>
+       </div>
+     </div>
 
-    </div>
-  </div>
+   </div>
+ </div>
 </div>
 
-
+@endforeach
 </footer><!-- End Footer -->
 
 

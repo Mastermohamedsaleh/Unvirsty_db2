@@ -36,7 +36,7 @@
             </li>
 
             <li class="sidebar-item">
-                    <a href="{{URL('view_assignment')}}" class="sidebar-link"><i class="fa-solid fa-list" style="padding: 0 10px 0  0"></i>My Assignment</a>
+                    <a href="{{URL('view_assignment')}}" class="sidebar-link"> <i class="fa-solid fa-book-open-reader" style="padding: 0 10px 0  0"></i>My Assignment</a>
              </li>
  
               <li class="sidebar-item">

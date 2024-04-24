@@ -28,8 +28,8 @@ class StudyScheduleRequest extends FormRequest
             'classroom_id'=>'required|exists:classrooms,id',
             'course_id'=>'required|exists:courses,id',
             'course_day'=>'required|in:sunday,monday,tuesday,wednesday,thursday,friday,saturday',
-            // 'start_time' => 'required|date_format:H:i',
-            // 'end_time' => 'required|date_format:H:i',
+            'start_time.*' => 'required',
+            'end_time.*' => 'required',
             'doctor_id'=>'required|exists:doctors,id',
         ];
     }

@@ -41,7 +41,7 @@
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
    
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
-          <li><a class="getstarted scrollto" href="{{url('login')}}">Sing Up</a></li>
+          <li><a class="getstarted scrollto" href="{{url('login')}}">Login</a></li>
         </ul>
         <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
         <!-- <i class="fa-solid fa-bars mobile-nav-toggle"></i> -->
@@ -65,7 +65,7 @@
           <h1>Smart Education For Your Study</h1>
           <h2>Education is a transformative journey that empowers individuals and shapes societies. It is the key to unlocking knowledge</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="{{url('login')}}" class="btn-get-started scrollto">Sing Up</a>
+            <a href="{{url('login')}}" class="btn-get-started scrollto">Login</a>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
@@ -314,7 +314,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="_lk_bg_cd">
                     <i class="fa-solid fa-graduation-cap"></i>
-                    <div class="counting" data-count="80">1000</div>
+                    <div class="counting" data-count="80">{{App\Models\Student::count()}}</div>
                     <h5>STUDENTS</h5>
                 </div>
             </div>
@@ -322,7 +322,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="_lk_bg_cd">
                     <i class="fa-solid fa-globe"></i>
-                    <div class="counting" data-count="27">100</div>
+                    <div class="counting" data-count="27">{{App\Models\Course::count()}}</div>
                     <h5>COURSES</h5>
                 </div>
             </div>
@@ -330,7 +330,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="_lk_bg_cd">
                 <i class="fa-solid fa-person-chalkboard"></i>
-                    <div class="counting" data-count="62">50</div>
+                    <div class="counting" data-count="62">{{App\Models\Doctor::count()}}</div>
                     <h5>Doctors</h5>
                 </div>
             </div>
@@ -366,65 +366,34 @@
 
 
         <div class="row">
-
-
-
-
-        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/images/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Super Manager</span>
-                <p>University managers provide strong leadership and vision for the institution. They set goals and establish priorities.</p>
-
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/images/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Doctor CS</span>
-                <p> possess a high level of technical proficiency in the subject. They have a strong command of programming languages and algorithms .</p>
-  
-              </div>
-            </div>
-          </div>
-
- 
-
+        
+          <?php $doctors = App\Models\Doctor::take(4)->get(); ?>
+@foreach($doctors as $doctor)
           <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/images/team-3.jpg" class="img-fluid" alt=""></div>
+
+
+
+              <div class="pic">
+            
+              
+            @if( $doctor->image_name == 'default.jpg')
+    <img src="{{URL::asset('assets/images/default.jpg')}}" alt="SomeThing Wrong" class="img-fluid " >
+    @else
+    <img src="{{asset('/image/'.$doctor->image_name)}}" alt="" class="img-fluid ">         
+    @endif
+            </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Manger Systems and information management</span>
-                <p>Managers in systems and information management engage in strategic planning to align technology and information .</p>
+                <h4>{{$doctor->name}}</h4>
+                <span>Teach : {{$doctor->college->name}}</span>
+                <p>Nationalitie : {{$doctor->Nationality->nationalitie }} .</p>
              
 
               </div>
             </div>
           </div>
+@endforeach
 
-          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/images/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Manger Engineering</span>
-                <p>Engineering managers possess a strong foundation of technical knowledge and expertise in engineering principles and practices.</p>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
 
       </div>
     </section><!-- End Team Section -->
@@ -499,42 +468,36 @@
     <div class="container">
         
         <div class="row courc-ro">
+
+
+
+        <?php $courses = App\Models\Course::take(3)->get(); ?>
+        @foreach($courses as $course)
             <div class="col-md-4">
                 <div class="courc-card">
-                    <img src="assets/images/course_1.jpg" alt="">
+      @if( $course->image_name == 'course_default.jpg')
+       <img src="{{URL::asset('assets/images/course_default.jpg')}}" alt="SomeThing Wrong"  >
+    @else
+    <img src="{{asset('/courses/'.$course->image_name)}}" alt="" >         
+    @endif
+
+
+
+                    <!-- <img src="assets/images/course_1.jpg" alt=""> -->
                     <div class="cource-det">
-                        <h6>Graphic Design</h6>
+                        <h6>{{$course->name}}</h6>
                         <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon  </li>
-                            <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
+                            <li><i class="fas fa-graduation-cap"></i> {{$course->doctor->name}} </li>
+                            <li><i class="far fa-calendar-plus"></i>{{$course->college->name}}</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="courc-card">
-                    <img src="   assets/images/course_2.jpg" alt="">
-                    <div class="cource-det">
-                        <h6>Online Marketing</h6>
-                        <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon  </li>
-                            <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="courc-card">
-                    <img src="   assets/images/course_3.jpg" alt="">
-                    <div class="cource-det">
-                        <h6>App Programing</h6>
-                        <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Adam Jhon  </li>
-                            <li><i class="far fa-calendar-plus"></i> June 23- Nov23</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            @endforeach
+
+
+
+ 
 
 
       
@@ -550,6 +513,8 @@
 
 
  
+<?php   $setting = App\Models\Setting::all();     ?>
+
 
 <div class="container">
                 <div class="row">
@@ -562,25 +527,25 @@
  <section id="contact" class="contact mt-5">
       <div class="container" data-aos="fade-up">
         <div class="row">
-
+@foreach($setting as $s)
           <div class="col-lg-12 d-flex align-items-stretch">
             <div class="info">
               <div class="address">
               <i class="fa-solid fa-location-dot"></i>
                 <h4>Location:</h4>
-                <p>A1011 AS Street, New Cairo, NY 535022</p>
+                <p>{{$s->address}}</p>
               </div>
 
               <div class="email">
               <i class="fa-solid fa-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>{{$s->email}}</p>
               </div>
 
               <div class="phone">
               <i class="fa-solid fa-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+{{$s->phone}}</p>
               </div>
 
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
@@ -606,23 +571,23 @@
     <div class="row">
 
       <div class="col-lg-4 col-md-6 footer-contact">
-        <h3>Smart Education</h3>
+      <h3>Smart Education</h3>
         <p>
-          A1011 AS Street <br>
+          {{$s->address}} <br>
           New Cairo, NY 535022<br>
            Cairo <br><br>
-          <strong>Phone:</strong> +1 5589 55488 55<br>
-          <strong>Email:</strong> info@example.com<br>
+          <strong>Phone:</strong> +{{$s->phone}}<br>
+          <strong>Email:</strong> {{$s->email}}<br>
         </p>
       </div>
 
       <div class="col-lg-4 col-md-6 footer-links">
         <h4>Useful Links</h4>
         <ul>
-        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Courses</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Fileds</a></li>
+        <li><i class="fa-solid fa-angle-right"></i> <a href="#">Home</a></li>
+          <li><i class="fa-solid fa-angle-right"></i> <a href="#">About us</a></li>
+          <li><i class="fa-solid fa-angle-right"></i> <a href="#">Courses</a></li>
+          <li><i class="fa-solid fa-angle-right"></i> <a href="#">Fileds</a></li>
         </ul>
       </div>
 
@@ -630,10 +595,10 @@
       <div class="col-lg-4 col-md-6 footer-links">
         <h4>Our Social Networks</h4>
         <div class="social-links mt-3">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></i></a>
-          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="{{$s->link_twitter}}" class="twitter"><i class="fa fa-twitter"></i></i></a>
+          <a href="{{$s->link_facebook}}" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="{{$s->link_instagram}}" class="instagram"><i class="fa fa-instagram"></i></a>
+          <a href="{{$s->link_linked_in}}" class="linkedin"><i class="fa fa-linkedin"></i></a>
         </div>
       </div>
 
@@ -641,7 +606,7 @@
   </div>
 </div>
 
-
+@endforeach
 </footer><!-- End Footer -->
 
 

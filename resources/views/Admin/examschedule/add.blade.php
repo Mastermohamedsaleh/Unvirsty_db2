@@ -32,7 +32,14 @@
 <p class="alert alert-info" style="width:500px;   margin: 0 auto ">{{ Session::get('message') }}</p>
 @endif
 
+@if(Session::has('danger'))
+<p class="alert alert-danger" style="width:500px;   margin: 0 auto ">{{ Session::get('danger') }}</p>
+@endif
 
+
+@if(Session::has('danger'))
+<p class="alert alert-danger" style="width:500px;   margin: 0 auto ">{{ Session::get('danger') }}</p>
+@endif
 
 
 

@@ -51,7 +51,7 @@
        
 
               
- <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#editprofileadmin{{\Auth::guard('admin')->user()->id}}">
+ <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#editprofileadmin{{\Auth::guard('admin')->user()->id}}" style="width:40px;height:40px">
  <i class="far fa-edit mb-5"></i>
 </button><br><br>
 
