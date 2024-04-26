@@ -50,7 +50,11 @@
                     </div>
 
 
-                    
+   
+                     
+                    <a href="{{URL('/')}}" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-left"></i> Back Home</a>
+ 
+
 
                     <div class="form-group">
                     <label for="exampleFormControlSelect1">Select Enter</label>

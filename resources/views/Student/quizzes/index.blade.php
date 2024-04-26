@@ -40,7 +40,7 @@
                         <tr>
                                 <th>#</th>
                                 <th>Name Quizze</th>
-                                <th>Name Subject</th>
+                                <th>Name Course</th>
                                 <th>Name Doctor</th>
                                 <th>Processes</th>
                             </tr>
@@ -55,8 +55,10 @@
                       <td>{{$quizze->doctor->name}}</td>
                       <td>
 
+
+      
    
-        <?php $mytime = \Carbon\Carbon::now('Africa/Cairo');
+        <?php $mytime = \Carbon\Carbon::now('Africa/Cairo')->addHours(1);
         $mytime = $mytime->toDateTimeString();
         $end_time = $quizze->end_time;
         $start_time = $quizze->start_time;?>
@@ -68,9 +70,13 @@
                 @if($question == null)
                       No Quetions Until Now
                 @else 
-                @if($quizze->degree->count() > 0 && $quizze->id == $quizze->degree[0]->quizze_id)
-                {{$quizze->degree[0]->score}}
-                @else
+                @php $cc =  \App\Models\Degree::where('student_id',\Auth::guard('student')->user()->id)->where('quizze_id',$quizze->id)->first() @endphp
+               @if(isset($cc))
+               <a href="{{URL('Detailsquizanddedegree', $quizze->id)}}"
+                                class="btn btn-outline-success btn-sm" role="button"
+                                aria-pressed="true" >
+                                <i class="fa-solid fa-d"></i></a>
+                @else 
                     @if($mytime <= $end_time)
                         <a href="{{route('student_quiz.show',$quizze->id)}}"
                                 class="btn btn-outline-success btn-sm" role="button"
@@ -80,8 +86,8 @@
                         {{  "Quiz  End" }}  
                         @endif
                            @endif
-                      @endif
-           @endif
+                       @endif 
+                       @endif 
               </td>
                     </tr>
                @endforeach

@@ -16,7 +16,7 @@
                         <label class="custom-control-label" for="customRadio{{$index}}" wire:click="nextQuestion({{$data[$counter]->id}}, {{$data[$counter]->score}}, '{{$answer}}', '{{$data[$counter]->right_answer}}')"> {{$answer}}</label>
                     </div>
                     </div>
-
+                    
                 @endforeach
                
             </div>

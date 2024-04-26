@@ -20,7 +20,13 @@ class QuizController extends Controller
         ->where('section_id', Auth::guard('student')->user()->section_id)
         ->orderBy('id', 'DESC')
         ->get();
-     return view('Student.quizzes.index', compact('quizzes'));
+
+
+    
+
+
+        $student_id = Auth::guard('student')->user()->id;
+     return view('Student.quizzes.index', compact('quizzes','student_id'));
     }
 
   

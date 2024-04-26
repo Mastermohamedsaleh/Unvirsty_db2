@@ -12,6 +12,7 @@ use App\Http\Controllers\Student\LectureStudentController;
 use App\Http\Controllers\Student\ScheduleController;  
 use App\Http\Controllers\Student\AssignmentController;  
 use App\Http\Controllers\Student\SpecialQuizController;  
+use App\Http\Controllers\Student\DetailsQuizController;  
 use App\Http\Controllers\CalenderController;  
 
 
@@ -29,6 +30,7 @@ Route::middleware(['auth:student'])->group(function () {
 
     Route::resource('student_quiz', QuizController::class);
     
+    Route::get('Detailsquizanddedegree/{quizze_id}',[DetailsQuizController::class,'index']);
     
     Route::controller(LectureStudentController::class)->group(function() {  
         

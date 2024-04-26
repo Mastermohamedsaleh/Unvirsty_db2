@@ -75,7 +75,7 @@
                                     @empty
                                    <h4 class="text-center text-danger"> No Student</h4> 
                                  @endforelse
-
+                             
                                         </div>
                                  
                                     </td>

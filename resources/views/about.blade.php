@@ -38,11 +38,11 @@
           <li><a class="nav-link scrollto active" href="{{url('/')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{url('about')}}">About</a></li>
           <li><a class="nav-link scrollto" href="{{url('coursehome')}}">Course</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">College</a></li>
+          <li><a class="nav-link   scrollto" href="#portfolio">Fileds</a></li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
    
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
-          <li><a class="getstarted scrollto" href="{{url('login')}}">Sing Up</a></li>
+          <li><a class="getstarted scrollto" href="{{url('login')}}">Login</a></li>
         </ul>
         <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
         <!-- <i class="fa-solid fa-bars mobile-nav-toggle"></i> -->

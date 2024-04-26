@@ -30,6 +30,7 @@
                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
                         <a href="{{route('student_quiz.index')}}" class="sidebar-link">All Quiz</a>
+                        <!-- <a href="{{url('Detailsquizanddedegree')}}" class="sidebar-link">Degree Quiz</a> -->
                         <a href="{{route('special_quiz')}}" class="sidebar-link">Speical Quiz</a>
                     </li>
                 </ul>
