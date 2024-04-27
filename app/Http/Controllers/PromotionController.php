@@ -24,7 +24,7 @@ class PromotionController extends Controller
         if(auth()->user()->status == 0 ){ 
             $promotions = Promotion::all();
          }else{
-            $promotions = Promotion::where('id',auth()->user()->college_id)->get();
+            $promotions = Promotion::where('from_college',auth()->user()->college_id)->get();
         }
 
         return view('Admin.promotion.mangment',compact('promotions'));
@@ -142,18 +142,17 @@ class PromotionController extends Controller
 
 
             }else{
-                $Promotion = Promotion::findorfail($request->id);
-                student::where('id', $Promotion->student_id)
+                $Promotion = Promotion::findorfail($id);
+                Student::where('id', $Promotion->student_id)
                     ->update([
-                        'college_id'=>$Promotion->from_grade,
-                        'classroom_id'=>$Promotion->from_Classroom,
+                        'college_id'=>$Promotion->from_college,
+                        'classroom_id'=>$Promotion->from_classroom,
                         'section_id'=> $Promotion->from_section,
                         'academic_year'=>$Promotion->academic_year,
                     ]);
 
 
-                Promotion::destroy($id);
-                DB::commit();
+                    $Promotion->delete();
                 Session::flash('message', 'Return Success');
                 return redirect()->back();
             }

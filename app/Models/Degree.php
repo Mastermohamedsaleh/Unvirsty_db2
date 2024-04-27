@@ -9,7 +9,7 @@ class Degree extends Model
 {
     use HasFactory;
 
-
+//   protected $fillable = ['student_id','quizze_id','question_id','score','date'];
 
     public function student()
     {

@@ -44,8 +44,18 @@ class QuizController extends Controller
 
     public function show($quizze_id)
     {
+
+
+        $quizze = Quizze::where('id',$quizze_id)->where('college_id',  Auth::guard('student')->user()->college_id)
+        ->where('classroom_id',    Auth::guard('student')->user()->classroom_id)
+        ->where('section_id', Auth::guard('student')->user()->section_id)
+        ->first();
+  if($quizze){
        $student_id = Auth::guard('student')->user()->id;
        return view('Student.quizzes.show',compact('quizze_id','student_id'));        
+  }else{
+    return redirect()->back();
+  }
     }
 
 

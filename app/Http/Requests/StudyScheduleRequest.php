@@ -27,7 +27,7 @@ class StudyScheduleRequest extends FormRequest
             'college_id'=>'required|exists:colleges,id',
             'classroom_id'=>'required|exists:classrooms,id',
             'course_id'=>'required|exists:courses,id',
-            'course_day'=>'required|in:sunday,monday,tuesday,wednesday,thursday,friday,saturday',
+            'course_day'=>'required',
             'start_time.*' => 'required',
             'end_time.*' => 'required',
             'doctor_id'=>'required|exists:doctors,id',
