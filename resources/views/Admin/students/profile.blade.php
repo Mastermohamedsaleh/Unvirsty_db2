@@ -127,20 +127,14 @@
       <form method="post"  action="{{url('updateprofile',\Auth::guard('student')->user()->id)}}" autocomplete="off" enctype="multipart/form-data">
       @csrf
       <div class="row">
-      <div class="col-12">
-      <div class="form-group">
-        <label>Name: </label>
-        <input type="text"  value="{{\Auth::guard('student')->user()->name}}" name="name"  >
-        </div>
-      </div>
+   
+        <input type="hidden"  value="{{\Auth::guard('student')->user()->name}}" name="name"  >
+
 
   
-      <div class="col-12">
-      <div class="form-group">
-         <label>Email : </label>
-         <input type="email" value="{{\Auth::guard('student')->user()->email}}"  name="email"  >
-         </div>
-      </div>
+ 
+         <input type="hidden" value="{{\Auth::guard('student')->user()->email}}"  name="email"  >
+  
 
 
 

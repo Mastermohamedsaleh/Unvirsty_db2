@@ -40,8 +40,8 @@
 
 <div class="card-box bg-blue">
     <div class="inner">
-        <h3> 6 </h3>
-        <p>  {{$college->name}} </p>
+   
+        <h6>  {{$college->name}} </h6>
     </div>
     <a  href="{{route('sections.show',$college->id)}}" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
 </div>

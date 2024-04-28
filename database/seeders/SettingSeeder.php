@@ -26,7 +26,7 @@ class SettingSeeder extends Seeder
         DB::table('settings')->delete();
         $settings = [
             'unvirsty_name'=>'Unvirsty',
-            'phone'=>'01117861776',
+            'phone'=>'010952678521',
             'address'=>'Cairo',
             'logo'=>'logo2.png',
             'email'=>'Unvirsty@gmail.com',

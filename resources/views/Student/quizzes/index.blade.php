@@ -42,6 +42,8 @@
                                 <th>Name Quizze</th>
                                 <th>Name Course</th>
                                 <th>Name Doctor</th>
+                                <th>Start Time</th>
+                                <th>End Time</th>
                                 <th>Processes</th>
                             </tr>
                             </thead>
@@ -53,6 +55,9 @@
                       <td>{{$quizze->name}}</td>
                       <td>{{$quizze->Course->name}}</td>
                       <td>{{$quizze->doctor->name}}</td>
+                      <td>  {{  date('l' , strtotime( $quizze->start_time ) )}} {{  date('h:i A' , strtotime( $quizze->start_time ) )}}</td>
+                      <td> {{  date('l' , strtotime( $quizze->end_time ) )}} {{  date('h:i A' , strtotime( $quizze->end_time ) )}}</td>
+
                       <td>
 
 

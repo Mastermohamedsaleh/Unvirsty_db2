@@ -31,7 +31,7 @@
 
          <th>
          
-            <td>name</td>
+            <td>Name</td>
             <td>course</td>
             <td>View</td>
          </th>
@@ -41,7 +41,7 @@
            <td> {{$i++}} </td>
             <td>{{$viewassignment->assignment->name}}</td>
             <td>{{$viewassignment->Course->name}}</td>
-            <td><a href="{{url('pdfstudentassignment',[$viewassignment->id ,$viewassignment->course_id])}}"><i class="fa-solid fa-eye"></i></a></td>
+            <td><a href="{{url('pdfstudentassignment',[$viewassignment->id ,$viewassignment->course_id])}}" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a></td>
 
 
      </tr>

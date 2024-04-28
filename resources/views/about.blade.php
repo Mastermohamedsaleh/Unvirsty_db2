@@ -242,7 +242,6 @@
         <div class="social-links mt-3">
         <a href="{{$s->link_twitter}}" class="twitter"><i class="fa fa-twitter"></i></i></a>
           <a href="{{$s->link_facebook}}" class="facebook"><i class="fa fa-facebook"></i></a>
-          <a href="{{$s->link_instagram}}" class="instagram"><i class="fa fa-instagram"></i></a>
           <a href="{{$s->link_linked_in}}" class="linkedin"><i class="fa fa-linkedin"></i></a>
         </div>
       </div>

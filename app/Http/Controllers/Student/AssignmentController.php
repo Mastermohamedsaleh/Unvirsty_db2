@@ -60,7 +60,7 @@ class AssignmentController extends Controller
         if($request->insert_button){
 
           $assignment = Assignment::where('id' ,$request->id)->first();
-          $mytime = \Carbon\Carbon::now('Africa/Cairo');
+          $mytime = \Carbon\Carbon::now('Africa/Cairo')->addHours(1);
           $mytime = $mytime->toDateTimeString();
           $end_time = $assignment->end_time;
           $start_time = $assignment->start_time;

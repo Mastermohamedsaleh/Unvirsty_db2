@@ -19,14 +19,11 @@ class PromotionController extends Controller
  
     public function index()
     {
-
-
         if(auth()->user()->status == 0 ){ 
             $promotions = Promotion::all();
          }else{
             $promotions = Promotion::where('from_college',auth()->user()->college_id)->get();
         }
-
         return view('Admin.promotion.mangment',compact('promotions'));
     }
 
@@ -153,6 +150,8 @@ class PromotionController extends Controller
 
 
                     $Promotion->delete();
+                // return $Promotion->from_classroom;
+                DB::commit();
                 Session::flash('message', 'Return Success');
                 return redirect()->back();
             }

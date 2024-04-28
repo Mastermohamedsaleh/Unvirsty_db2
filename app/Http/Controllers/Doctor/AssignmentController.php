@@ -69,7 +69,12 @@ class AssignmentController extends Controller
 
     public function show($id)
     {
-        //
+        $assignment = Assignment::where('id',$id)->where('doctor_id',  auth()->user()->id)->pluck('file_name')->first();
+        if($assignment){
+          return view('Doctor.Assignments.show_pdf_doctor',compact('assignment'));
+        }else{
+          return redirect()->back();
+        }
     }
 
 

@@ -34,7 +34,7 @@
  
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="{{url('/')}}">Home</a></li>
+          <li><a class="nav-link scrollto " href="{{url('/')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{url('about')}}">About</a></li>
           <li><a class="nav-link scrollto" href="{{url('coursehome')}}">Course</a></li>
           <li><a class="nav-link   scrollto" href="#portfolio">Fileds</a></li>
@@ -151,19 +151,13 @@
 		<!-- /About -->
 
 
-    <!-- our fields -->
-
-
-    <div class="container">
-                <div class="row">
-                    <div class="heading">
-                        <h2>Our Fields</h2>
-                    </div>
-                </div>
-</div>
-</div>    
-    <div class="container mb-5">
-
+   <!-- our fields -->
+   <div class="container">
+      <div class="row">
+        <span class="fs-1 fw-semibold txt-darkblue text-center py-5"
+          >Our Fields</span
+        >
+      </div>
       <div class="row">
         <div class="col-lg-6 col-sm-12 p-0">
           <div
@@ -184,7 +178,7 @@
                 communication, control systems, and electronic circuits.
               </p>
               <button
-                class="button1 mb-3 bg-white txt-green fw-semibold position-absolute bottom-0"
+                class="button1 mb-3 fw-semibold position-absolute bottom-0"
               >
                 Read More
               </button>
@@ -548,7 +542,10 @@
                 <p>+{{$s->phone}}</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27605.73201754464!2d31.634360818228256!3d30.130924742295434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14581de8fe9924b3%3A0x272b76e6bc5bbf4b!2z2KfZhNmF2LnZh9ivINin2YTYudin2YTZiiDZhNmE2K3Yp9iz2KjYp9iqINmI2KrZg9mG2YjZhNmI2KzZitinINin2YTZhdi52YTZiNmF2KfYqiDYo9mD2KfYr9mK2YXZitipINin2YTYtNix2YjZgg!5e0!3m2!1sar!2seg!4v1714303675878!5m2!1sar!2seg" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
             </div>
 
           </div>
@@ -597,7 +594,6 @@
         <div class="social-links mt-3">
         <a href="{{$s->link_twitter}}" class="twitter"><i class="fa fa-twitter"></i></i></a>
           <a href="{{$s->link_facebook}}" class="facebook"><i class="fa fa-facebook"></i></a>
-          <a href="{{$s->link_instagram}}" class="instagram"><i class="fa fa-instagram"></i></a>
           <a href="{{$s->link_linked_in}}" class="linkedin"><i class="fa fa-linkedin"></i></a>
         </div>
       </div>

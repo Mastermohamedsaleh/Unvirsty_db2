@@ -13,7 +13,7 @@
        @method('DELETE')
       @csrf
 
-  <input type="hidden" name="id" value="{{$student->id}}">
+  
       
                         <div class="col">
                             <p class="h5 text-danger"> Do You Want Delete This College</p>

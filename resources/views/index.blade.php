@@ -74,6 +74,39 @@
 </div>
 </div>
 
+        <div class="col-lg-4 col-sm-6">
+
+<div class="card-box bg-blue">
+    <div class="inner">
+        <h3>{{\App\Models\Student::count()}} </h3>
+        <p>  Student </p>
+    </div>
+    <a href="{{route('students.index')}}"class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+</div>
+</div>
+
+        <div class="col-lg-4 col-sm-6">
+
+<div class="card-box bg-green">
+    <div class="inner">
+        <h3>{{\App\Models\Doctor::count()}} </h3>
+        <p>  Doctor </p>
+    </div>
+    <a href="{{route('doctors.index')}}"class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+</div>
+</div>
+
+        <div class="col-lg-4 col-sm-6">
+
+<div class="card-box bg-orange">
+    <div class="inner">
+        <h3>{{\App\Models\Course::count()}} </h3>
+        <p>  Course </p>
+    </div>
+    <a href="{{route('course.index')}}"class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+</div>
+</div>
+
 
 
 
