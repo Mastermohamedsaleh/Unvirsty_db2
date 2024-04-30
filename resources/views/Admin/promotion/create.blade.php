@@ -12,7 +12,7 @@
 
 
 
-   <h3 class="text-primary text-center mt-4"  style="width:500px;   margin: 0 auto ">Promotion</h3>
+   <h3 class="text-primary text-center mt-4"  >Promotion</h3>
 
 
    @if ($errors->any())

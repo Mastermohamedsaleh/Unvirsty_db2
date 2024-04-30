@@ -8,9 +8,11 @@ use Illuminate\Http\Request;
 
 use App\Models\Question;
 use App\Models\Quizze;
+use App\Models\Option;
 use Illuminate\Support\Facades\Session;
 
 use App\Http\Requests\QuestionRequest;
+use Illuminate\Support\Facades\DB;
 
 
 
@@ -34,6 +36,9 @@ class QuestionController extends Controller
           $typequestion = $request->typequestion;
           if($typequestion == 'trueorfale'){
             $trimmed = trim($request->answers);
+
+
+        
             $numWords = count(explode('-', $trimmed));
             if($numWords == 2){
                 $question = new Question();
@@ -43,6 +48,20 @@ class QuestionController extends Controller
                 $question->score = $request->score;
                 $question->quizze_id =  $request->quizz_id;
                 $question->save();
+
+                $answer = preg_split('/(-)/', $trimmed);
+
+                for($i = 0 ; $i < count($answer) ; $i++){
+                 $insert = [
+                     'question_id' => $question->id,
+                     'option_text'=>$answer[$i],
+                     'points'=>$request->score,
+                   ];
+             DB::table('options')->insert($insert);
+             } 
+               
+
+
                 Session::flash('message', 'Add Success');
                 return redirect()->back();
 
@@ -61,6 +80,21 @@ class QuestionController extends Controller
                 $question->score = $request->score;
                 $question->quizze_id =  $request->quizz_id;
                 $question->save();
+
+
+                $answer = preg_split('/(-)/', $trimmed);
+
+                for($i = 0 ; $i < count($answer) ; $i++){
+                 $insert = [
+                     'question_id' => $question->id,
+                     'option_text'=>$answer[$i],
+                     'points'=>$request->score,
+                   ];
+             DB::table('options')->insert($insert);
+             } 
+               
+
+
                 Session::flash('message', 'Add Success');
                 return redirect()->back();
             }else{

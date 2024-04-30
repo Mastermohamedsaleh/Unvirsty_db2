@@ -57,7 +57,7 @@
 
 
                     <div class="form-group">
-                    <label for="exampleFormControlSelect1">Select Enter</label>
+                    <label for="exampleFormControlSelect1">Select User</label>
                     <select class="form-control" id="sectionChooser">
                         <option value="" selected disabled>Choose list</option>
                         <option value="admin">Admin</option>

@@ -47,5 +47,10 @@ class Quizze extends Model
         return $this->hasMany('App\Models\Degree');
     }
 
+    public function categoryQuestions()
+    {
+        return $this->hasMany('App\Models\Question','question_id');
+    }
+
 
 }
