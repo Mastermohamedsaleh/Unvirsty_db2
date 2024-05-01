@@ -38,7 +38,7 @@
           <li><a class="nav-link scrollto active" href="{{url('/')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{url('about')}}">About</a></li>
           <li><a class="nav-link scrollto" href="{{url('coursehome')}}">Course</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Fileds</a></li>
+          <li><a class="nav-link   scrollto" href="{{url('fileds')}}">Fileds</a></li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
    
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->

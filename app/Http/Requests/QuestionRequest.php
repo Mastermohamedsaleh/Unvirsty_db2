@@ -28,7 +28,7 @@ class QuestionRequest extends FormRequest
             'quizz_id'=>'required', 
             'answers'=>'required',
             'right_answer'=>'required',
-            'score'=>'required|in:1,2.5,3,5,10,15,20',
+            'score'=>'required|in:1,2,2.5,3,5,10,15,20',
             'title'=>'required'
         ];
     }

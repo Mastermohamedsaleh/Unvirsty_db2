@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ URL::asset('Styles/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{URL::asset('Styles/welcome.css')}}" />
     <script src="{{URL::asset('Script/script/bootstrap.bundle.min.js') }}"></script>
-
+     <script src="{{URL::asset('Script/script.js')}}"></script>
        <!-- font -->
        <script
        src="https://kit.fontawesome.com/c1ef89d5e0.js"
@@ -37,7 +37,7 @@
           <li><a class="nav-link scrollto " href="{{url('/')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{url('about')}}">About</a></li>
           <li><a class="nav-link scrollto" href="{{url('coursehome')}}">Course</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Fileds</a></li>
+          <li><a class="nav-link   scrollto" href="{{url('fileds')}}">Fileds</a></li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
    
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->

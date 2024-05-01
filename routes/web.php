@@ -28,6 +28,9 @@ Route::get('coursehome',function(){
 Route::get('about',function(){
      return view('about');
 });
+Route::get('fileds',function(){
+     return view('Fields');
+});
 
 
 Route::get('/dashboard', function () {

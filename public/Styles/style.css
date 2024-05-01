@@ -100,15 +100,9 @@ a.sidebar-link:hover{
   background-color: #a3abb4;  
 }
 
-.text-color{
-    color: #00D084;
-}
-
-.button-color{
-    background-color: #00D084 ;
 
 
-}
+
 
 .sidebar-link[data-bs-toggle="collapse"].collapsed::after{
     transform:rotate(45deg);
@@ -167,7 +161,6 @@ a.sidebar-link:hover{
     border: none;
     background-color: var(--bs-body-color);
 }
-
 
 
 
