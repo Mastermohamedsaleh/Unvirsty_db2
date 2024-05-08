@@ -58,7 +58,7 @@
         <td>Update Time</td><td style=" background-color: #e9ecef;">{{  date('l' , strtotime($viewassignment->udpated_at ) )}} {{  date('h:i A' , strtotime($viewassignment->end_time ) )}}</td>
     </tr>
 
-    {{ $score = \App\Models\DegreeAssignment::where('assignment_id',$viewassignment->assignment_id)->pluck('score')->first()}}
+    @php $score = \App\Models\DegreeAssignment::where('assignment_id',$viewassignment->assignment_id)->where('student_id',$viewassignment->student_id)->pluck('score')->first() @endphp
     <tr>
         <td>Degree</td><td>{{  ($score ? $score : 'No Socre') }}</td>
     </tr>
@@ -72,7 +72,7 @@
     <input type="hidden" value="{{$viewassignment->student_id}}" name="student_id">
     <input type="hidden" value="{{$viewassignment->course_id}}" name="course_id">
     <tr>
-        <td><input type="submit" name="insert_button" value="Submit" /></td><td><input type="submit" name="update_button" value="Update" /></td>
+        <td><input type="submit" /></td></td>
     </tr>
     </form>
 

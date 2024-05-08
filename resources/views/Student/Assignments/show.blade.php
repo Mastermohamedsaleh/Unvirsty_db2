@@ -86,7 +86,7 @@
  
 
     <tr>
-        <td><input type="submit" name="insert_button" value="Submit" /></td><td><input type="submit" name="update_button" value="Update" /></td>
+        <td><input type="submit" name="insert_button" value="Submit" /></td></td>
     </tr>
 @endif
     </form>

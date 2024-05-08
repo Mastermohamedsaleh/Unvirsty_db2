@@ -72,7 +72,6 @@
          <input type="datetime-local" name="end_time" value="{{$assignment->end_time}}">
         </div>
 
-
 <div class="col-12 mb-2">
 <label > File name : <span class="text-danger">*</span></label>
 <input type="file" accept="application/pdf" name="file_name" >

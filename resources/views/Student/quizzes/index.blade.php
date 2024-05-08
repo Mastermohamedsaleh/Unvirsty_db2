@@ -10,7 +10,7 @@
 
 
 
-<h3 class="text-primary text-center">Quizze</h3>
+<h3 class="text-primary text-center">Quiz</h3>
 
 
 
@@ -115,11 +115,7 @@
 
 
 
-<script>
-     function alertAbuse() {
-                alert("برجاء عدم إعادة تحميل الصفحة بعد دخول الاختبار - في حال تم تنفيذ ذلك سيتم الغاء الاختبار بشكل اوتوماتيك ");
-            }
-</script>
+
 
 
 

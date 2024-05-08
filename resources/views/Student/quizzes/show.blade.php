@@ -1,6 +1,6 @@
 @include('header')
   <div class="wrapper">
-  @include('sidebar_student')
+
 
       <div class="main">
 @include('nav')
@@ -26,15 +26,18 @@
       
             <!-- <div class="card @if(!$loop->last)mb-3 @endif"> -->
                              
-         <div class="card-header">
-         {{ $question->title }}
-         </div>
+    
+        
            
       
 
 
    
         <div class="card-body">
+
+        <h4 class="text-primary"> {{ $question->title }}</h4>
+            
+
 
         <input type="hidden" name="questions[{{ $question->id }}]" value="">
              @foreach($question->questionOptions as $option)

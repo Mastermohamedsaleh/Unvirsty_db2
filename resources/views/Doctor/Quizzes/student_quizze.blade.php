@@ -54,11 +54,10 @@
                                         <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>اسم الطالب</th>
-                                            <th>الدرجة</th>
-                                            <th>تلاعب</th>
-                                            <th>تاريخ اجراء الاختبار</th>
-                                            <th>العمليات</th>
+                                            <th> Name Student</th>
+                                            <th>Degree</th>
+                                            <th> Date</th>
+                                           
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -67,60 +66,15 @@
                                                 <td>{{ $loop->iteration}}</td>
                                                 <td>{{$degree->student->name}}</td>
                                                 <td>{{$degree->score}}</td>
-                                                @if($degree->abuse == 0)
-                                                    <td style="color: green">لا يوجد تلاعب</td>
-                                                    @else
-                                                    <td style="color: red"> يوجد تلاعب</td>
-                                                @endif
                                                 <td>{{$degree->date}}</td>
-                                                  @if($degree->abuse == 1) 
-                                                <td> 
-                                    <button type="button" class="btn btn-info btn-sm"
-                                     data-bs-toggle="modal"
-                                     data-bs-target="#repeat_quizze{{ $degree->quizze_id }}" title="إعادة">
-                                    <i class="fas fa-repeat"></i></button>    
-                                                </td>
-                                                   @else 
-                                                <td>No Play</td>
-                                         @endif 
+                                              
+                                          
                                             </tr>
 
 
                                       
                                             
-                                            <!-- Modal -->
-<div class="modal fade" id="repeat_quizze{{$degree->quizze_id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Repeat Quiz</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
- 
-
-      <form action="{{url('repeat_quizze', $degree->quizze_id)}}" method="post">
-                                     {{method_field('post')}}
-                                      @csrf
-                      
-                                      <div class="modal-body">
-                                  <h6>{{$degree->student->name}}</h6>
-                                  <input type="hidden" name="student_id" value="{{$degree->student_id}}">
-                                  <input type="hidden" name="quizze_id" value="{{$degree->quizze_id}}">
-                                  <input type="hidden" name="course_id" value="{{$degree->course_id}}">
-
-                                  <input type="datetime-local" name="start_time">
-                                  <input type="datetime-local" name="end_time">
-
-                              </div>
-                           
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary button-mode" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary button-mode">Save</button>
-      </div>
-   
-</form>
-
+        
 @endforeach 
     </div>
 

@@ -79,56 +79,35 @@ class StudentAssignmentController extends Controller
 
       
 
-          try {
-
-
-
-            if($request->insert_button){  
- 
-            $Assignment = DegreeAssignment::where('assignment_id' ,$request->id)->first(); 
-          if($Assignment){
-            return redirect()->back()->withErrors(['message' => 'This Degree submit Before']);
-         }else{
-
-          $validated = $request->validate([
-            'score' => 'required|numeric|max:100',
-        ]);
-
-        $assignment =  new  DegreeAssignment();
-        $assignment->score =  $request->score ;
-        $assignment->assignment_id = $request->assignment_id;
-        $assignment->course_id = $request->course_id;
-        $assignment->student_id = $request->student_id;
-        $assignment->save();
-        Session::flash('message', 'Submit Success');
-        return redirect()->back();
-  }
- 
-             
-          }else{
-
-            $validated = $request->validate([
-              'score' => 'required|numeric|max:100',
-          ]);
-  
-          $assignment =  DegreeAssignment::where('assignment_id' ,$request->assignment_id)->first();
-          $assignment->score =  $request->score ;
-          $assignment->assignment_id = $request->assignment_id;
-          $assignment->course_id = $request->course_id;
-          $assignment->student_id = $request->student_id;
-          $assignment->save();
-          Session::flash('message', 'Update Success');
-          return redirect()->back();
-          }
-
-          }catch (\Exception $e) {
-              return redirect()->back()->with(['error' => $e->getMessage()]);
-          }
-
-
-
-
-        }
+      $Assignment = DegreeAssignment::where('assignment_id' ,$request->assignment_id)->where('student_id',$request->student_id)->first();  
+      try{
+      if($Assignment){
+        $validated = $request->validate([
+          'score' => 'required|numeric|max:100',
+      ]);
+      
+      $Assignment->score =  $request->score ;
+      $Assignment->assignment_id = $request->assignment_id;
+      $Assignment->course_id = $request->course_id;
+      $Assignment->student_id = $request->student_id;
+      $Assignment->save();
+      }else{
+        $validated = $request->validate([
+          'score' => 'required|numeric|max:100',
+      ]);
+      $assignment =  new  DegreeAssignment();
+      $assignment->score =  $request->score ;
+      $assignment->assignment_id = $request->assignment_id;
+      $assignment->course_id = $request->course_id;
+      $assignment->student_id = $request->student_id;
+      $assignment->save();
+      }
+      Session::flash('message', 'Submit Success');
+      return redirect()->back();
+      }catch (\Exception $e) {
+          return redirect()->back()->with(['error' => $e->getMessage()]);
+      }
+     }
      
 
 }

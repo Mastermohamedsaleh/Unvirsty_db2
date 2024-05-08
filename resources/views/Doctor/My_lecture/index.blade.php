@@ -77,10 +77,13 @@
     </button>
     <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
 
-    <li><button type="button" class="btn btn-danger btn-sm dropdown-item" data-bs-toggle="modal" data-bs-target="#deletelecture{{$lecture->id}}">
+<li>
+<button type="button" class="btn btn-danger btn-sm dropdown-item" data-bs-toggle="modal" data-bs-target="#deletelecture{{$lecture->id}}">
 <i class="fa-solid fa-trash"></i>Delete
-</button></li>
-     <li><a href="{{route('lecture.edit',$lecture->id)}}" class="btn btn-success btn-sm dropdown-item"><i class="fa-solid fa-pen-to-square"></i>Edit</a></li>
+</button>
+</li>
+
+      <li><a href="{{route('lecture.edit',$lecture->id)}}" class="btn btn-success btn-sm dropdown-item"><i class="fa-solid fa-pen-to-square"></i>Edit</a></li>
       <li><a href="{{route('lecture.show',$lecture->id)}}" class="btn btn-primary btn-sm dropdown-item"><i class="fa-solid fa-eye"></i>Show</a></li>
     </ul>
   </div>

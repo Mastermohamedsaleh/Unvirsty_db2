@@ -256,10 +256,10 @@
       <div class="col-lg-4 col-md-6 footer-links">
         <h4>Useful Links</h4>
         <ul>
-        <li><i class="fa-solid fa-angle-right"></i> <a href="#">Home</a></li>
-          <li><i class="fa-solid fa-angle-right"></i> <a href="#">About us</a></li>
-          <li><i class="fa-solid fa-angle-right"></i> <a href="#">Courses</a></li>
-          <li><i class="fa-solid fa-angle-right"></i> <a href="#">Fileds</a></li>
+        <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('/')}}">Home</a></li>
+          <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('about')}}">About us</a></li>
+          <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('coursehome')}}">Courses</a></li>
+          <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('Fields')}}">Fileds</a></li>
         </ul>
       </div>
 
