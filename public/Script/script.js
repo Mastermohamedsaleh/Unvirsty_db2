@@ -1,9 +1,3 @@
-const sidebarToggle = document.querySelector("#sidebar-toggle")
-sidebarToggle.addEventListener("click",function(){
-    document.querySelector("#sidebar").classList.toggle("collapsed")
-});
-
-
 let hover1 = document.getElementsByClassName("hover1");
 let card1 = document.getElementsByClassName("card1");
 let card2 = document.getElementsByClassName("card2");
@@ -18,4 +12,9 @@ for (let index = 0; index < 4; index++) {
     card2[index].style.display = "none";
   });
 }
+
+
+
+ 
+
 

@@ -28,7 +28,7 @@ Route::get('coursehome',function(){
 Route::get('about',function(){
      return view('about');
 });
-Route::get('fileds',function(){
+Route::get('fields',function(){
      return view('Fields');
 });
 

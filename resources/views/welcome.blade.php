@@ -6,8 +6,8 @@
     <title>Smart Academy</title>
     <link rel="stylesheet" href="{{ URL::asset('Styles/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{URL::asset('Styles/welcome.css')}}" />
-    <script src="{{URL::asset('Script/script/bootstrap.bundle.min.js') }}"></script>
-     <script src="{{URL::asset('Script/script.js')}}"></script>
+    <script src="{{URL::asset('Script/bootstrap.bundle.min.js') }}" defer></script>
+     <script src="{{URL::asset('Script/script.js')}}" defer></script>
        <!-- font -->
        <script
        src="https://kit.fontawesome.com/c1ef89d5e0.js"
@@ -37,7 +37,7 @@
           <li><a class="nav-link scrollto " href="{{url('/')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{url('about')}}">About</a></li>
           <li><a class="nav-link scrollto" href="{{url('coursehome')}}">Course</a></li>
-          <li><a class="nav-link   scrollto" href="{{url('fileds')}}">Fileds</a></li>
+          <li><a class="nav-link   scrollto" href="{{url('fields')}}">Fields</a></li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
    
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
@@ -151,11 +151,11 @@
 		<!-- /About -->
 
 
-   <!-- our fields -->
-   <div class="container">
+  <!-- our fields -->
+  <div class="container">
       <div class="row">
         <span class="fs-1 fw-semibold txt-darkblue text-center py-5"
-          >Our Fields</span
+          >Our fields</span
         >
       </div>
       <div class="row">
@@ -168,20 +168,25 @@
               height: 500px;
             "
           >
-            <div class="card2 card-body my-3 mx-3 p-2" style="display: none">
+            <div
+              class="card2 card-body my-3 mx-3 px-2 py-5"
+              style="display: none"
+            >
               <span class="span1 fs-1 txt-darkblue fw-semibold">
                 Electric Engineering
               </span>
-              <p class="mt-5 fs-4 w-75 fw-semibold text-white">
+              <p class="mt-4 fs-4 w-75 fw-semibold text-white">
                 Electrical engineers are responsible for creating innovative
                 solutions in areas such as power generation, distribution,
                 communication, control systems, and electronic circuits.
               </p>
-              <button
-                class="button1 mb-3 fw-semibold position-absolute bottom-0"
+              <a href="{{url('fields')}}">
+                <button
+                  class="button1 mb-3 fw-semibold position-absolute bottom-25"
+                >
+                  Read More
+                </button></a
               >
-                Read More
-              </button>
             </div>
 
             <div class="card1 card-body position-absolute bottom-0">
@@ -193,32 +198,37 @@
         </div>
         <div class="col-lg-6 col-sm-12 p-0">
           <div
-            class="hover1 card rounded-0"
+            class="hover1 hover2 card rounded-0"
             style="
               background-image: url(./Assets/images/13.png);
               background-size: cover;
               height: 500px;
             "
           >
-            <div class="card2 card-body my-3 mx-3 p-2" style="display: none">
-              <span class="span1 fs-1 txt-darkblue fw-semibold">
-                Electric Engineering
+            <div
+              class="card2 card-body my-3 mx-3 px-2 py-5"
+              style="display: none"
+            >
+              <span class="span1 fs-1  fw-semibold">
+                Computer Science
               </span>
-              <p class="mt-5 fs-4 w-75 fw-semibold text-white">
-                Electrical engineers are responsible for creating innovative
-                solutions in areas such as power generation, distribution,
-                communication, control systems, and electronic circuits.
+              <p class="mt-4 fs-4 w-75 fw-semibold text-white">
+                Computer Science is a field that encompasses the study of
+                computation, algorithms, data structures.
               </p>
-              <button
-                class="button1 mb-3 bg-white txt-green fw-semibold position-absolute bottom-0"
+
+              <a href="{{url('fields')}}">
+                <button
+                  class="button1 mb-3 fw-semibold position-absolute bottom-25"
+                >
+                  Read More
+                </button></a
               >
-                Read More
-              </button>
             </div>
 
             <div class="card1 card-body position-absolute bottom-0">
               <span class="px-2 my-3 fs-1 text-white fw-semibold"
-                >Electric Engineering</span
+                >Computer Science</span
               >
             </div>
           </div>
@@ -227,32 +237,37 @@
       <div class="row">
         <div class="col-lg-6 col-sm-12 p-0">
           <div
-            class="hover1 card rounded-0"
+            class="hover1 hover2 card rounded-0"
             style="
               background-image: url(./Assets/images/14.png);
               background-size: cover;
               height: 500px;
             "
           >
-            <div class="card2 card-body my-3 mx-3 p-2" style="display: none">
-              <span class="span1 fs-1 txt-darkblue fw-semibold">
-                Electric Engineering
+            <div
+              class="card2 card-body my-3 mx-3 px-2 py-5"
+              style="display: none"
+            >
+              <span class="span1 fs-1 txt-green fw-semibold">
+                Architectural engineering
               </span>
-              <p class="mt-5 fs-4 w-75 fw-semibold text-white">
-                Electrical engineers are responsible for creating innovative
-                solutions in areas such as power generation, distribution,
-                communication, control systems, and electronic circuits.
+              <p class="mt-4 fs-4 w-75 fw-semibold text-white">
+                Architectural engineering is a multidisciplinary field that
+                integrates principles from architecture and engineering to
+                design and create buildings and other structures.
               </p>
-              <button
-                class="button1 mb-3 bg-white txt-green fw-semibold position-absolute bottom-0"
+              <a href="{{url('fields')}}">
+                <button
+                  class="button1 mb-3 fw-semibold position-absolute bottom-25"
+                >
+                  Read More
+                </button></a
               >
-                Read More
-              </button>
             </div>
 
             <div class="card1 card-body position-absolute bottom-0">
               <span class="px-2 my-3 fs-1 text-white fw-semibold"
-                >Electric Engineering</span
+                >Architectural engineering</span
               >
             </div>
           </div>
@@ -266,31 +281,43 @@
               height: 500px;
             "
           >
-            <div class="card2 card-body my-3 mx-3 p-2" style="display: none">
+            <div
+              class="card2 card-body my-3 mx-3 px-2 py-5"
+              style="display: none"
+            >
               <span class="span1 fs-1 txt-darkblue fw-semibold">
-                Electric Engineering
+                Business Administration
               </span>
-              <p class="mt-5 fs-4 w-75 fw-semibold text-white">
-                Electrical engineers are responsible for creating innovative
-                solutions in areas such as power generation, distribution,
-                communication, control systems, and electronic circuits.
+              <p class="mt-4 fs-4 w-75 fw-semibold text-white">
+                Business Administration is a broad field of study and practice
+                that encompasses various principles, strategies, and activities
+                related to the management and operation of organizations.
               </p>
-              <button
-                class="button1 mb-3 bg-white txt-green fw-semibold position-absolute bottom-0"
+              <a href="{{url('fields')}}">
+                <button
+                  class="button1 mb-3 fw-semibold position-absolute bottom-25"
+                >
+                  Read More
+                </button></a
               >
-                Read More
-              </button>
             </div>
 
             <div class="card1 card-body position-absolute bottom-0">
               <span class="px-2 my-3 fs-1 text-white fw-semibold"
-                >Electric Engineering</span
+                >Business Administration</span
               >
             </div>
           </div>
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
 
 
 
@@ -584,7 +611,7 @@
         <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('/')}}">Home</a></li>
           <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('about')}}">About us</a></li>
           <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('coursehome')}}">Courses</a></li>
-          <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('Fields')}}">Fileds</a></li>
+          <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('fields')}}">Fields</a></li>
         </ul>
       </div>
 
@@ -604,6 +631,8 @@
 
 @endforeach
 </footer><!-- End Footer -->
+
+
 
 
   </body>

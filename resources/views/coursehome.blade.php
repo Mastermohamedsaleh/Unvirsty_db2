@@ -54,7 +54,7 @@
           <li><a class="nav-link scrollto " href="{{url('/')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{url('about')}}">About</a></li>
           <li><a class="nav-link scrollto" href="{{url('coursehome')}}">Course</a></li>
-          <li><a class="nav-link   scrollto" href="{{url('fileds')}}">Fileds</a></li>
+          <li><a class="nav-link   scrollto" href="{{url('fields')}}">Fields</a></li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
    
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
@@ -163,7 +163,7 @@
         <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('/')}}">Home</a></li>
           <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('about')}}">About us</a></li>
           <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('coursehome')}}">Courses</a></li>
-          <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('Fields')}}">Fileds</a></li>
+          <li><i class="fa-solid fa-angle-right"></i> <a href="{{url('fields')}}">Fields</a></li>
         </ul>
      </div>
 
