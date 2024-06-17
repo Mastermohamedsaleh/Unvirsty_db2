@@ -19,8 +19,8 @@
 <div class="row">
 
 
-<div class="col-3">
-<a href="{{route('lecture.create')}}" class="mb-2 btn btn-primary btn-sm">Add Lecture</a>
+<div class="col-3 mt-4">
+<a href="{{route('lecturecreate',$course_id)}}" class="mb-2 btn btn-primary btn-sm">Add Lecture</a>
 </div>
 
 
@@ -46,11 +46,17 @@
 
 
 
+<div  class="alert alert text-light" role="alert" style="padding:5px; background: #E6EDFB ;   border-radius: 10px;">
 
 
 @forelse($lectures as $lecture)
-<div  class="alert alert text-light" role="alert" style="padding:5px; background: #E6EDFB ;   border-radius: 10px;">
 
+
+<div class="row mt-3">
+
+
+
+<div class="col">
 
 <div class="d-flex ">
                                 
@@ -69,11 +75,19 @@
                           
                       </div>
           
+</div>
+
+
+
+<div class="col">
                       <div class="mt-2">
 
+
+            
+
                     <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
-    <i class="fa-solid fa-share"></i>
+    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle btn-sm" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left:400px">
+  
     </button>
     <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
 
@@ -91,6 +105,13 @@
 
 
 
+@include('Doctor.My_lecture.delete')
+
+
+</div>
+
+</div>
+
 
 
 </div>
@@ -102,7 +123,7 @@
 </div>
       
         @endforelse
- {{ $lectures->links() }}
+ 
 
 
 

@@ -17,9 +17,9 @@ class LectureController extends Controller
  
         $search = $request->input('search');          
         if ($search) {  
-             $lectures = Lecture::where('title', 'like', "%$search%")->paginate(PAGENATOR_COUNT);
+             $lectures = Lecture::where('title', 'like', "%$search%")->get();
         }else{
-            $lectures = Lecture::where('doctor_id',auth()->user()->id)->orderBy('id', 'DESC')->paginate(PAGENATOR_COUNT);  
+            $lectures = Lecture::where('doctor_id',auth()->user()->id)->orderBy('id', 'DESC')->get();  
         }      
         // $lectures = Lecture::where('doctor_id',auth()->user()->id)->orderBy('id', 'DESC')->get();
         return view('Doctor.My_lecture.index',compact('lectures'));
@@ -28,36 +28,43 @@ class LectureController extends Controller
 
     public function create()
     {
-        $courses = Course::where('doctor_id',auth()->user()->id)->get();
-        return view('Doctor.My_lecture.create',compact('courses'));
+        // $courses = Course::where('doctor_id',auth()->user()->id)->get();
+        // return view('Doctor.My_lecture.create',compact('courses'));
     }
 
+
+    public function lecturecreate($course_id){
+        return view('Doctor.My_lecture.create',compact('course_id'));
+    }
 
     public function store(LectureRequest $request)
     {
 
      
-$course = Course::where('id' , $request->course_id)->first();
-  
-
-
- 
 try{
+    $course = Course::where('id' , $request->course_id)->where('doctor_id',auth()->user()->id)->first();
+
+    $course_id = $course->id; 
+    if($course){
+        $fileName = time().'.'.$request->file('file_name')->extension();  
+        $request->file('file_name')->move(public_path('Lecture_Doctor'), $fileName);
+        $lecture = new Lecture();
+        $lecture->title = $request->title;
+        $lecture->file_name =   $fileName;
+        $lecture->doctor_id =  auth()->user()->id;
+        $lecture->course_id =  $request->course_id;
+        $lecture->college_id =  $course->college_id;
+        $lecture->classroom_id =  $course->classroom_id;
+        $lecture->section_id =  $course->section_id;
+        $lecture->save();
+        Session::flash('message', 'Add Success');
+        return redirect()->route('lecturedoctor',$course_id);
+    }else{
+        return redirect()->route('lecturedoctorcourse');
+
+    }
 
 
-    $fileName = time().'.'.$request->file('file_name')->extension();  
-    $request->file('file_name')->move(public_path('Lecture_Doctor'), $fileName);
-    $lecture = new Lecture();
-    $lecture->title = $request->title;
-    $lecture->file_name =   $fileName;
-    $lecture->doctor_id =  auth()->user()->id;
-    $lecture->course_id =  $request->course_id;
-    $lecture->college_id =  $course->college_id;
-    $lecture->classroom_id =  $course->classroom_id;
-    $lecture->section_id =  $course->section_id;
-    $lecture->save();
-    Session::flash('message', 'Add Success');
-    return redirect()->route('lecture.index');
       
 
 

@@ -8,7 +8,7 @@
 
 
 
-<h3 class="text-primary text-center">doctors</h3>
+<h3 class="text-primary text-center">Doctors</h3>
 
 
 
@@ -74,15 +74,15 @@
 
 
                
-
+                                    <button type="button" class="mb-2 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deletedoctor{{$doctor->id}}">
+<i class="fas fa-trash"></i>
+</button>
 <a href="{{route('doctors.edit',$doctor->id)}}" class="mb-2 btn btn-success btn-sm"> <i class="fas fa-edit"></i></a>
 
 
 
 
-<button type="button" class="mb-2 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deletedoctor{{$doctor->id}}">
-<i class="fas fa-trash"></i>
-</button>
+
 
 @include('Admin.doctors.delete')
 

@@ -7,13 +7,16 @@
 
 
 
-                @if(Session::has('message'))
-<p class="alert alert-info">{{ Session::get('message') }}</p>
-@endif
+
 
 <h3 class="text-center text-primary">Add Graduated Students</h3>
 
-
+@if(Session::has('message'))
+<p class="alert alert-info" style="width:500px;   margin: 0 auto ">{{ Session::get('message') }}</p>
+@endif
+                @if(Session::has('message_error'))
+<p class="alert alert-danger" style="width:500px;   margin: 0 auto ">{{ Session::get('message_error') }}</p>
+@endif
 
 <div class="card">
 
@@ -30,7 +33,7 @@
    <h4 class=" mt-4">Add Graduated</h4>
 
 
-   <div class="col-4">
+   <div class="col">
 
 
 <div class="form-group">
@@ -54,7 +57,7 @@
 </div> 
 
 
-
+<!-- 
 
    <div class="col-4">
    <div class="form-group">
@@ -72,8 +75,8 @@
 
 </div> 
 
-   <!-- end one col -->
-   </div>
+    end one col -->
+   <!-- </div>  -->
 
    <div class="col-4">
   
@@ -87,21 +90,19 @@
  
  </select>
 
- @error('section_id')
-            <div class="alert alert-danger mt-1">{{ $message }}</div>
-         @enderror
+
 
 </div> 
 
 
-   <!-- end one col -->
-   </div>
+    <!-- end one col  -->
+   </div> 
 
 
 </div>
 
 </div>
-<button type="submit" class="btn btn-primary m-4" >Submit</button>
+<button type="submit" class="btn btn-primary btn-sm m-4" >Submit</button>
 
 </form>
 
@@ -110,14 +111,5 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
- @include('footer')
+@include('footer')
 

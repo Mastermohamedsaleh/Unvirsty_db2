@@ -13,6 +13,7 @@ use App\Http\Controllers\Student\ScheduleController;
 use App\Http\Controllers\Student\AssignmentController;  
 use App\Http\Controllers\Student\SpecialQuizController;  
 use App\Http\Controllers\Student\DetailsQuizController;  
+use App\Http\Controllers\Student\OnlineCourseController;  
 use App\Http\Controllers\CalenderController;  
 
 
@@ -32,9 +33,12 @@ Route::middleware(['auth:student'])->group(function () {
     
     Route::get('Detailsquizanddedegree/{quizze_id}',[DetailsQuizController::class,'index']);
     
+
+
     Route::controller(LectureStudentController::class)->group(function() {  
         
-        Route::get('lecturestudent', 'LectureStudent')->name('lecturestudent');
+        Route::get('lecturestudentcourse', 'courses')->name('lecturestudentcourse');
+        Route::get('lecturestudent/{id}', 'lecturestudent')->name('lecturestudent');
         Route::get('viewlecture/{id}', 'viewLecture')->name('viewlecture');
         
     
@@ -56,11 +60,8 @@ Route::middleware(['auth:student'])->group(function () {
        });
     
     
-    Route::controller(FeeController::class)->group(function() {   
-        Route::get('fee_student', 'index');
-        Route::get('details_fee_student', 'Details');
-    });
-    
+       Route::get('student_online',[ OnlineCourseController::class  , 'index' ]);
+
     
     Route::controller(ScheduleController::class)->group(function() {  
         Route::get('showexamschedule', 'examschedule');
@@ -70,6 +71,7 @@ Route::middleware(['auth:student'])->group(function () {
     Route::get('full-calender-student', [CalenderController::class, 'student']);
 
 
+   
 
 
 

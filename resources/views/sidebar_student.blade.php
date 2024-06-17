@@ -20,7 +20,7 @@
                 </li>
 
                 <li class="sidebar-item">
-                    <a href="{{route('lecturestudent')}}" class="sidebar-link"><i class="fa-solid fa-book" style="padding: 0 10px 0  0"></i> Mylecture</a>
+                    <a href="{{route('lecturestudentcourse')}}" class="sidebar-link"><i class="fa-solid fa-book" style="padding: 0 10px 0  0"></i> Mylecture</a>
                 </li>
 
 
@@ -49,7 +49,10 @@
                     </li>
                 </ul>
             </li>
-
+            
+            <li class="sidebar-item">
+                    <a href="{{URL('student_online')}}" class="sidebar-link"><i style="padding: 0 10px 0  0" class="fa-solid fa-globe"></i>Online Course</a>
+                </li>
             <li class="sidebar-item">
                     <a href="{{URL('studentprofile')}}" class="sidebar-link"><i style="padding: 0 10px 0  0" class="fa-solid fa-user"></i>MyProfile</a>
                 </li>

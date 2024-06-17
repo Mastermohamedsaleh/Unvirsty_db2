@@ -801,4 +801,15 @@ text-transform: uppercase;
   outline: 0;
 }
 
+
+.hover3{
+  transition: .5s;
+}
+
+.hover3:hover{
+  transform: scale(1.1);
+  color: #002db3;
+
+}
+
 /* End Button Search */

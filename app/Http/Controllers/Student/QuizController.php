@@ -12,6 +12,7 @@ use App\Models\Option;
 use App\Models\AnswerStudent;
 use Illuminate\Support\Facades\Auth;
 Use Carbon\Carbon;
+use Illuminate\Support\Facades\Session;
 
 
 
@@ -46,8 +47,7 @@ class QuizController extends Controller
      
 
 
-          $quiz = Quizze::where('id',$request->quizze_id)->first();  
-
+        $quiz = Quizze::where('id',$request->quizze_id)->first();  
         $mytime = Carbon::now('Africa/Cairo')->addHours(1);
         $mytime = $mytime->toDateTimeString();
         $start_time = $quiz->start_time;
@@ -90,6 +90,7 @@ class QuizController extends Controller
         $degree->date = date('Y-m-d');
         $degree->save();
     }
+        Session::flash('message','تم إجراء الاختبار بنجاح');
         return redirect()->route('student_quiz.index');
 
      

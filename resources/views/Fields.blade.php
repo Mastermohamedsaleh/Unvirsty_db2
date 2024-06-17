@@ -116,13 +116,16 @@
           <div
             class="my-auto h-100 w-75 py-3 px-2 d-flex flex-column justify-content-around"
           >
+
+
+
+
+          
             <span class="fs-1 fw-semibold txt-darkblue"
-              >Archetictural Engineering</span
+              > Information Science</span
             >
             <p class="fs-4 text-white">
-              Architectural engineering is a multidisciplinary field that
-              integrates principles from architecture and engineering to design
-              and create buildings and other structures.
+            Information science is the science and practice dealing with the effective collection, storage, retrieval, and use of information. It is concerned with recordable information and knowledge.
             </p>
 
           </div>
@@ -140,7 +143,7 @@
             class="fs-1 w-auto text-white position-absolute"
             style="top: 80%; left: 5%"
           >
-            Architectural Engineering
+          Information Science
           </div>
         </div>
       </div>

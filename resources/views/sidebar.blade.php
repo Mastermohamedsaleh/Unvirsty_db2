@@ -32,7 +32,7 @@
 
 
                 <li class="sidebar-item">
-                    <a href="{{url('dashboard/admin')}}" class="sidebar-link"><i class="fa-solid fa-list"></i>Dashboard</a>
+                    <a href="{{url('dashboard/admin')}}" class="sidebar-link"><i  style="padding: 0 10px 0  0" class="fa-solid fa-list"></i>Dashboard</a>
                 </li>
 
                 @if(\Auth::guard('admin')->user()->status == 0)

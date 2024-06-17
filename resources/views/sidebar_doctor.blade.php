@@ -24,8 +24,8 @@
                 <a href="#" class="sidebar-link collapsed coll" data-bs-target="#auth" data-bs-toggle="collapse" area-expanded="false"><i class="fa-solid fa-book" style="padding: 0 10px 0  0"></i> Mylecture <i class="fa-solid fa-chevron-down float-end"></i></a>
                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="{{route('lecture.index')}}" class="sidebar-link">lecture</a>
-                        <a href="{{route('lecture.create')}}" class="sidebar-link">Add lecture</a>
+                        <a href="{{url('lecturedoctorcourse')}}" class="sidebar-link">lecture</a>
+                       
                     </li>
                 </ul>
             </li>
@@ -58,8 +58,24 @@
                     </li>
                 </ul>
             </li>
-  
-
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed coll" data-bs-target="#attendance" data-bs-toggle="collapse" area-expanded="false"></i> <i class="fa-solid fa-file-pen" style="padding: 0 10px 0  0"></i>  Attendance <i class="fa-solid fa-chevron-down float-end"></i></a>
+                <ul id="attendance" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="{{route('attendance.index')}}" class="sidebar-link">Attendance</a>
+                        <a href="{{url('attendance_report')}}" class="sidebar-link">Attendance Report</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed coll" data-bs-target="#onlinecourse" data-bs-toggle="collapse" area-expanded="false"></i><i style="padding: 0 10px 0  0" class="fa-solid fa-globe"></i> Online Course <i class="fa-solid fa-chevron-down float-end"></i></a>
+                <ul id="onlinecourse" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="{{route('onlinecourse.index')}}" class="sidebar-link">OnlineCourse</a>
+                        <a href="{{route('onlinecoursedirect.create')}}" class="sidebar-link">Add OnlineCourse</a>
+                    </li>
+                </ul>
+            </li>
 
             <li class="sidebar-item">
                     <a href="{{URL('doctorprofile')}}" class="sidebar-link"><i style="padding: 0 10px 0  0" class="fa-solid fa-user" style="padding: 0 10px 0  0"></i>MyProfile</a>

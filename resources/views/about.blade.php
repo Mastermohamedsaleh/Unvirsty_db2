@@ -72,11 +72,6 @@
             </section>
     
             <!-- ============abt-02 Section  Start============ -->
-
-
-
-
-
              <section class="abt-02">
             <div class="container">
                 <div class="row">
@@ -90,9 +85,6 @@
                             <div class="abt-content-card">
                                 <h2>About Us</h2>
                                 <p>A more interactive and collaborative way of learning has been introduced that has so many benefits. It is beneficial for doctors and students since doctors get an entire platform to pick information from and teach instead of just being restricted to a book. Students get to pay more attention in class and find studying fun..</p>
-      
-                    
-                         
                             </div>
                         </div>
                     </div>
@@ -205,12 +197,8 @@
      
       <!-- ======= Footer ======= -->
       <?php   $setting = App\Models\Setting::all();     ?>
-
-
  <!-- ======= Footer ======= -->
  <footer id="footer">
-
-	
 <div class="footer-top" >
   <div class="container">
     <div class="row">

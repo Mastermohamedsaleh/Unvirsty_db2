@@ -72,7 +72,7 @@
 
 
 
-    <button>update</button>
+    <button class="btn btn-primary btn-sm">update</button>
 </form>
 
 

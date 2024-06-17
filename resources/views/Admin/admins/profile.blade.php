@@ -46,7 +46,7 @@
 
 
               <h5>{{\Auth::guard('admin')->user()->name}} </h5>
-              <p>Smart Academy</p>
+              <p>Smart Education</p>
 
        
 

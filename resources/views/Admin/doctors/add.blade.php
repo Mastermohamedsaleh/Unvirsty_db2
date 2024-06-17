@@ -45,7 +45,7 @@
 <div class="row">
 
 
-<legend><span class="number">1</span> Write info Doctor</legend>
+<legend><span class="number"><i class="fa-solid fa-pen"></i></span> Write info Doctor</legend>
 
 
 <div class="col-md-6">

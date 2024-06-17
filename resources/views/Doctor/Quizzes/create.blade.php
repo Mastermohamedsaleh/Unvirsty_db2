@@ -39,7 +39,7 @@
 <div class="row">
 
 
-<legend><span class="number">1</span> Write basic info</legend>
+<legend><span class="number"><i class="fa-solid fa-pen"></i></span> Write basic info</legend>
 
 <div class="col-6">
 

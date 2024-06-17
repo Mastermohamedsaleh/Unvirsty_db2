@@ -1,6 +1,6 @@
 @include('header')
   <div class="wrapper">
-
+  @include('sidebar_student')
 
       <div class="main">
 @include('nav')
@@ -18,7 +18,7 @@
 
 
 <!-- Display the countdown timer in an element -->
-<p id="demo" style="width:200px ;margin:auto;font-size:30px;font-weight:600" class="text-success"></p>
+<p id="demo" style="width:200px ;margin:auto;font-size:30px;font-weight:600" class="text-primary"></p>
  
   <form method="POST" action="{{route('student_quiz.store')}}">
                         @csrf

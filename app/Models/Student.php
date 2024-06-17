@@ -76,5 +76,9 @@ class Student extends Authenticatable
         return $this->hasMany('App\Models\Degree');
     }
 
+    public function attendance()
+    {
+        return $this->hasMany('App\Models\Attendance', 'student_id');
+    }
 
 }

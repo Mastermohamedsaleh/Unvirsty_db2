@@ -76,23 +76,21 @@
                       No Quetions Until Now
                 @else 
 
-                @if( \App\Models\SpecialQuiz::where('quizze_id',$quizze->id)->where('student_id',\Auth::guard('student')->user()->id)->first() )
-                {{"Special Quizze"}}
-             @else
+
 
              @php $degree =  \App\Models\Degree::where('student_id',\Auth::guard('student')->user()->id)->where('quizze_id',$quizze->id)->first() @endphp
 
              @if(isset($degree))
                <a href="{{URL('Detailsquizanddedegree', $quizze->id)}}"
-                                class="btn btn-outline-success btn-sm" role="button"
+                                class="btn btn-outline-primary btn-sm" role="button"
                                 aria-pressed="true" >
                                 <i class="fa-solid fa-d"></i></a>
             
                 @else
                     @if($mytime <= $end_time)
                         <a href="{{route('student_quiz.show',$quizze->id)}}"
-                                class="btn btn-outline-success btn-sm" role="button"
-                                aria-pressed="true" onclick="alertAbuse()">
+                                class="btn btn-outline-primary btn-sm" role="button"
+                                aria-pressed="true" >
                                 <i class="fas fa-person-booth"></i></a>
                         @else
                         {{  "Quiz  End" }}  
@@ -102,7 +100,7 @@
                 @endif
 
 
-                      @endif
+                
            @endif
               </td>
                     </tr>

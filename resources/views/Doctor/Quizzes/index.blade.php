@@ -10,7 +10,7 @@
 
 
 
-<h3 class="text-primary text-center">Quizze</h3>
+<h3 class="text-primary text-center">Quiz</h3>
 
 
 
@@ -51,7 +51,7 @@
 
 
 
-<a href="{{route('quizzes.create')}}" class="mb-2 btn btn-primary btn-sm">Add New Quizze</a>
+<a href="{{route('quizzes.create')}}" class="mb-2 btn btn-primary btn-sm">Add New Quiz</a>
 
 
 

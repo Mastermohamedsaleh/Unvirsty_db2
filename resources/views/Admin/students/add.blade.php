@@ -9,18 +9,19 @@
 
 
 
-<div class="cantainer mt-2">
-
-
-<h3 class="text-primary text-center">Add Student</h3>
 
 
 
-<div class="card m-5">
+<h3 class="text-primary text-center">Student</h3>
+
+<div class="container">
+
+<div class="card ">
 
 
 
 <div class="card-body">
+<legend><span class="number"><i class="fa-solid fa-pen"></i></span> Write info Doctor</legend>
 
 
  <!-- Message Success -->

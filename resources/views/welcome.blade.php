@@ -75,20 +75,6 @@
       </div>
     </div>
   </section><!-- End Hero -->
-
-
-
-   
-
- 
-
- 
-
-
-
-
-
-
       <!-- About -->
 		<div id="about" class="section">
 
@@ -97,7 +83,6 @@
 
 				<!-- row -->
 				<div class="row">
-
 					<div class="col-md-6">
 						<div class="section-header">
 							<h2>Welcome to Smart Education</h2>
@@ -249,12 +234,10 @@
               style="display: none"
             >
               <span class="span1 fs-1 txt-green fw-semibold">
-                Architectural engineering
+              Information Science
               </span>
               <p class="mt-4 fs-4 w-75 fw-semibold text-white">
-                Architectural engineering is a multidisciplinary field that
-                integrates principles from architecture and engineering to
-                design and create buildings and other structures.
+              Information science is the science and practice dealing with the effective collection, storage, retrieval, and use of information. It is concerned with recordable information and knowledge.
               </p>
               <a href="{{url('fields')}}">
                 <button
@@ -267,7 +250,7 @@
 
             <div class="card1 card-body position-absolute bottom-0">
               <span class="px-2 my-3 fs-1 text-white fw-semibold"
-                >Architectural engineering</span
+                >Information Science</span
               >
             </div>
           </div>
@@ -380,24 +363,14 @@
 </div>
 </div>   
 
-
   <section id="team" class="team section-bg  mt-3">
       <div class="container" data-aos="fade-up">
-
-
-
         <div class="row">
-        
           <?php $doctors = App\Models\Doctor::take(4)->get(); ?>
 @foreach($doctors as $doctor)
           <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="member d-flex align-items-start">
-
-
-
-              <div class="pic">
-            
-              
+              <div class="pic">   
             @if( $doctor->image_name == 'default.jpg')
     <img src="{{URL::asset('assets/images/default.jpg')}}" alt="SomeThing Wrong" class="img-fluid " >
     @else
@@ -408,8 +381,6 @@
                 <h4>{{$doctor->name}}</h4>
                 <span>Teach : {{$doctor->college->name}}</span>
                 <p>Nationalitie : {{$doctor->Nationality->nationalitie }} .</p>
-             
-
               </div>
             </div>
           </div>
@@ -533,10 +504,11 @@
  <!-- ======= Contact Section ======= -->
 
 
- 
+
+
+
+
 <?php   $setting = App\Models\Setting::all();     ?>
-
-
 <div class="container">
                 <div class="row">
                     <div class="heading">
@@ -562,14 +534,11 @@
                 <h4>Email:</h4>
                 <p>{{$s->email}}</p>
               </div>
-
               <div class="phone">
               <i class="fa-solid fa-phone"></i>
                 <h4>Call:</h4>
                 <p>+{{$s->phone}}</p>
               </div>
-
-
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27605.73201754464!2d31.634360818228256!3d30.130924742295434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14581de8fe9924b3%3A0x272b76e6bc5bbf4b!2z2KfZhNmF2LnZh9ivINin2YTYudin2YTZiiDZhNmE2K3Yp9iz2KjYp9iqINmI2KrZg9mG2YjZhNmI2KzZitinINin2YTZhdi52YTZiNmF2KfYqiDYo9mD2KfYr9mK2YXZitipINin2YTYtNix2YjZgg!5e0!3m2!1sar!2seg!4v1714303675878!5m2!1sar!2seg" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 

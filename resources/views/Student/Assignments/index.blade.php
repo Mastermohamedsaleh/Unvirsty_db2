@@ -10,7 +10,7 @@
 
 
 
-<h3 class="text-primary text-center">assignment</h3>
+<h3 class="text-primary text-center">Assignment</h3>
 
 
 
@@ -101,7 +101,7 @@
 
 
                         <a href="{{url('show_assignment',$assignment->id)}}"
-                                class="btn btn-outline-success btn-sm" role="button"
+                                class="btn btn-outline-primary btn-sm" role="button"
                                 aria-pressed="true" >
                                 <i class="fas fa-person-booth"></i></a>
   

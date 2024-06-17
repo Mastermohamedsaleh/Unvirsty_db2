@@ -39,12 +39,13 @@
 @csrf
 
 
+<input type="hidden" name="course_id" value="{{$course_id}}">
 
 
 <div class="row">
 
 
-<legend><span class="number">1</span> Add New Lecture</legend>
+<legend><span class="number"><i class="fa-solid fa-pen"></i></span> Add New Lecture</legend>
 <div class="col-12">
 
 <label for="">Title<span class="text-danger">*</span> </label>
@@ -52,18 +53,7 @@
 
 </div>
 
-<div class="col-12">
 
-
-<label>Course: <span class="text-danger">*</span> </label>
-<select name="course_id" >
-        <option value="" >Choose Course</option>
-            @foreach($courses as $course) 
-            <option value="{{$course->id}}" >{{$course->name}}</option>
-            @endforeach
- </select>
-
-</div>
 
 
 

@@ -26,7 +26,7 @@
         
       <div class="create" id="create"></div>
        
-       <a href="javascript:void(0)" class="btn btn-danger addrow" id="addrow">+</a>
+       <a href="javascript:void(0)" class="btn btn-primary btn-sm addrow" id="addrow">+</a>
 
 
 
@@ -53,7 +53,7 @@ $(document).ready(function(){
     <input type="text" name="name[]" >
     </div>
     <div class="col">
-    <select name="college_id[]" id=""class="form-select">
+    <select name="college_id[]" id="">
     <option value="" disabled>Choose College</option>
 @foreach($colleges as $college)
   <option value="{{$college->id}}">{{$college->name}}</option>
@@ -62,7 +62,7 @@ $(document).ready(function(){
 
     </div>
     <div class="col">
-    <a hreg="javascript:void(0)" class="btn btn-danger deleteRow" >-</a>
+    <a hreg="javascript:void(0)" class="btn btn-danger btn-sm deleteRow" >-</a>
     </div>
     </div>
       `
